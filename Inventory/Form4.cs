@@ -16,5 +16,10 @@ namespace Inventory
         {
             InitializeComponent();
         }
+
+        private void dgvInventoryViewer_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
