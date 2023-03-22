@@ -61,6 +61,7 @@
             this.ManagerBtn.TabIndex = 2;
             this.ManagerBtn.Text = "Manager";
             this.ManagerBtn.UseVisualStyleBackColor = true;
+            this.ManagerBtn.Click += new System.EventHandler(this.ManagerBtn_Click);
             // 
             // Form1
             // 
