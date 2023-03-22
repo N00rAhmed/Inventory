@@ -19,9 +19,20 @@ namespace Inventory
 
         private void loginBtn_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Form4 f4 = new Form4();
-            f4.Show();
+            if (userNametxt.Text == "manager")
+            {
+                this.Hide();
+                Form5 f5 = new Form5();
+                f5.Show();
+
+            }
+            else
+            {
+                this.Hide();
+                Form4 f4 = new Form4();
+                f4.Show();
+
+            }
 
         }
 
@@ -36,6 +47,11 @@ namespace Inventory
         }
 
         private void Passwordtxt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void userNametxt_TextChanged(object sender, EventArgs e)
         {
 
         }
