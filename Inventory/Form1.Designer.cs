@@ -30,6 +30,7 @@
         {
             this.Create_account = new System.Windows.Forms.Button();
             this.Login = new System.Windows.Forms.Button();
+            this.ManagerBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Create_account
@@ -52,11 +53,21 @@
             this.Login.UseVisualStyleBackColor = true;
             this.Login.Click += new System.EventHandler(this.Login_Click);
             // 
+            // ManagerBtn
+            // 
+            this.ManagerBtn.Location = new System.Drawing.Point(324, 281);
+            this.ManagerBtn.Name = "ManagerBtn";
+            this.ManagerBtn.Size = new System.Drawing.Size(108, 42);
+            this.ManagerBtn.TabIndex = 2;
+            this.ManagerBtn.Text = "Manager";
+            this.ManagerBtn.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.ManagerBtn);
             this.Controls.Add(this.Login);
             this.Controls.Add(this.Create_account);
             this.Name = "Form1";
@@ -69,6 +80,7 @@
 
         private System.Windows.Forms.Button Create_account;
         private System.Windows.Forms.Button Login;
+        private System.Windows.Forms.Button ManagerBtn;
     }
 }
 
