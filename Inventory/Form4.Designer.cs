@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
+            this.dgvInventoryViewer = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvInventoryViewer)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -40,14 +42,24 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Inventory Manager";
             // 
+            // dgvInventoryViewer
+            // 
+            this.dgvInventoryViewer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvInventoryViewer.Location = new System.Drawing.Point(68, 100);
+            this.dgvInventoryViewer.Name = "dgvInventoryViewer";
+            this.dgvInventoryViewer.Size = new System.Drawing.Size(634, 301);
+            this.dgvInventoryViewer.TabIndex = 1;
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dgvInventoryViewer);
             this.Controls.Add(this.label1);
             this.Name = "Form4";
             this.Text = "Form4";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvInventoryViewer)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -56,5 +68,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView dgvInventoryViewer;
     }
 }
