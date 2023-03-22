@@ -32,5 +32,6 @@ namespace Inventory
             f2.Show();
 
         }
+        private void ManagerBtn_Click(object sender, EventArgs e)
     }
 }
