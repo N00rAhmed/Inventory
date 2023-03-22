@@ -103,7 +103,7 @@
             this.Controls.Add(this.loginBtn);
             this.Controls.Add(this.label1);
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.Text = "  ";
             this.ResumeLayout(false);
             this.PerformLayout();
 

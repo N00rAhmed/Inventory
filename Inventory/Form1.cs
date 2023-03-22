@@ -33,7 +33,7 @@ namespace Inventory
 
         }
 
-        private void ManagerBtn_Click(object sender, EventArgs e)
+        private void ManagerBtn_Click(object sender, EventArgs e) 
         {
             this.Hide();
             Form2 f2 = new Form2();

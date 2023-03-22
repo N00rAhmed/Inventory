@@ -16,5 +16,12 @@ namespace Inventory
         {
             InitializeComponent();
         }
+
+        private void Btnlogout_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 f1 = new Form1();
+            f1.Show();
+        }
     }
 }

@@ -30,6 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.dgvInventoryViewer = new System.Windows.Forms.DataGridView();
+            this.Btnlogout = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInventoryViewer)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,11 +51,22 @@
             this.dgvInventoryViewer.Size = new System.Drawing.Size(634, 301);
             this.dgvInventoryViewer.TabIndex = 1;
             // 
+            // Btnlogout
+            // 
+            this.Btnlogout.Location = new System.Drawing.Point(640, 61);
+            this.Btnlogout.Name = "Btnlogout";
+            this.Btnlogout.Size = new System.Drawing.Size(75, 23);
+            this.Btnlogout.TabIndex = 2;
+            this.Btnlogout.Text = "Log out";
+            this.Btnlogout.UseVisualStyleBackColor = true;
+            this.Btnlogout.Click += new System.EventHandler(this.Btnlogout_Click);
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Btnlogout);
             this.Controls.Add(this.dgvInventoryViewer);
             this.Controls.Add(this.label1);
             this.Name = "Form4";
@@ -69,5 +81,6 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgvInventoryViewer;
+        private System.Windows.Forms.Button Btnlogout;
     }
 }
