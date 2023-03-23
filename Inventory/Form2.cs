@@ -56,5 +56,10 @@ namespace Inventory
         {
 
         }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

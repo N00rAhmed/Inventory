@@ -48,6 +48,7 @@
             this.Mngfname.Name = "Mngfname";
             this.Mngfname.Size = new System.Drawing.Size(124, 20);
             this.Mngfname.TabIndex = 0;
+            this.Mngfname.TextChanged += new System.EventHandler(this.Mngfname_TextChanged);
             // 
             // mngLname
             // 
