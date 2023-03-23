@@ -65,6 +65,7 @@
             this.Firstnametxtbox.Name = "Firstnametxtbox";
             this.Firstnametxtbox.Size = new System.Drawing.Size(159, 20);
             this.Firstnametxtbox.TabIndex = 2;
+            this.Firstnametxtbox.TextChanged += new System.EventHandler(this.Firstnametxtbox_TextChanged);
             // 
             // label2
             // 

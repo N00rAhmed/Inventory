@@ -19,6 +19,7 @@ namespace Inventory
 
         private void loginBtn_Click(object sender, EventArgs e)
         {
+/*if statement currently for manager redirect*/
             if (userNametxt.Text == "manager")
             {
                 this.Hide();

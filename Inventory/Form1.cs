@@ -33,10 +33,7 @@ namespace Inventory
 
         }
 
-        private void ManagerBtn_Click(object sender, EventArgs e)
-        {
 
-        }
 
         private void ManagerBtn_Click(object sender, EventArgs e)
         {
