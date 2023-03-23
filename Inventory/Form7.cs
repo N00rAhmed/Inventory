@@ -21,5 +21,10 @@ namespace Inventory
         {
 
         }
+
+        private void Mngfname_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
