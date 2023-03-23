@@ -20,7 +20,7 @@ namespace Inventory
         }
         private void LoadData()
         {
-            SQLiteConnection conn = new SQLiteConnection(@"data source = C:\Users\c1009048\Desktop\Inventory\Inventory\inventory.db");
+            SQLiteConnection conn = new SQLiteConnection(@"C:\kraftan\Inventory");
             conn.Open();
 
             string query = "SELECT * FROM Kaftan_Stock";
