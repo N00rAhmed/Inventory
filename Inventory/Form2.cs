@@ -8,30 +8,57 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using System.Data.SQLite;
+
 namespace Inventory
 {
     public partial class Form2 : Form
     {
+        DataTable dt = new DataTable();
+        public static string Uid = "";
+
         public Form2()
         {
             InitializeComponent();
+
+            SQLiteConnection conn = new SQLiteConnection(@"data source = C:\Users\User\Desktop\KoolKaftan\Inventory\inventory.db");
+            conn.Open();
+
+            string query = "SELECT UserName, Password, UserID from Login";
+            SQLiteCommand cmd = new SQLiteCommand(query, conn);
+
+
+            SQLiteDataAdapter adapter = new SQLiteDataAdapter(cmd);
+            adapter.Fill(dt);
+            conn.Close();
+
         }
 
         private void loginBtn_Click(object sender, EventArgs e)
         {
-/*if statement currently for manager redirect*/
-            if (userNametxt.Text == "manager")
-            {
-                this.Hide();
-                Form5 f5 = new Form5();
-                f5.Show();
+            this.Hide();
+            bool login = false;
 
-            }
-            else
+            for (int i = 0; i < dt.Rows.Count; i++)
             {
-                this.Hide();
-                Form4 f4 = new Form4();
-                f4.Show();
+                DataRow dr = dt.Rows[i];
+                if (dr["UserName"].ToString() == userNametxt.Text && dr["Password"].ToString() == Passwordtxt.Text)
+                {
+                    Uid = dr["UserID"].ToString();
+
+                    Form4 f3 = new Form4();
+                    f3.Show();
+                    login = true;
+                    break;
+                }
+
+                if (login == false)
+                {
+                    string message = "Incorrect login details";
+                    MessageBox.Show(message);
+                    Form2 f2 = new Form2();
+                    f2.Show();
+                }
 
             }
 
@@ -53,6 +80,11 @@ namespace Inventory
         }
 
         private void userNametxt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
         {
 
         }

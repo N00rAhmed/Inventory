@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using System.Data.SQLite;
+using System.Data.SqlClient;
+
 namespace Inventory
 {
     public partial class Form7 : Form
@@ -19,6 +22,39 @@ namespace Inventory
 
         private void Form7_Load(object sender, EventArgs e)
         {
+
+        }
+        private void AmendDatabase(string txtQuery)
+        {
+            SQLiteConnection conn = new SQLiteConnection(@"data source = C:\Users\User\Desktop\KoolKaftan\Inventory\inventory.db");
+            conn.Open();
+
+            string query = txtQuery;
+            SQLiteCommand cmd = new SQLiteCommand(query, conn);
+            cmd.ExecuteNonQuery();
+
+            conn.Close();
+            Mngfname.Text = "";
+            mngLname.Text = "";
+            mngEmail.Text = "";
+            Mngusername.Text = "";
+            Mngpassword.Text = "";
+
+
+        }
+
+        private void Registerbtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            string dbquery = "INSERT INTO UserAdmin(Name, LastName, UserName, Password, Email)" + "VALUES ('" + Mngfname.Text + "', '" + mngLname.Text + "', '" + Mngusername.Text + "', '" + Mngpassword.Text + "', '" + mngEmail.Text + "')";
+            string query = "INSERT INTO Admin(Email, Password, UserAdminID) SELECT Email, Password, UserAdminID FROM UserAdmin";
+
+            AmendDatabase(dbquery);
+            AmendDatabase(query);
+
+            Form6 f6 = new Form6();
+            f6.Show();
 
         }
     }

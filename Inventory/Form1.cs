@@ -38,8 +38,13 @@ namespace Inventory
         private void ManagerBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form2 f2 = new Form2();
-            f2.Show();
+            Form8 f8 = new Form8();
+            f8.Show();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

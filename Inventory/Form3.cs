@@ -26,27 +26,21 @@ namespace Inventory
         {
             this.Hide();
 
-
-
             string dbquery = "INSERT INTO User(FirstName, LastName, UserName, Password)" + "VALUES ('" + Firstnametxtbox.Text + "', '" + lastnametxtbox.Text + "', '" + Usernametxtbox.Text + "', '" + Passwordtxtbox.Text + "')";
-/*            string query = "INSERT INTO Login(UserName, Password, UserID) SELECT UserName, Password, UserID FROM User";
-*/
-            /*            INSERT INTO Login(UserName, Password, UserID) SELECT UserName, Password, UserID FROM User;
-            */
+            string query = "INSERT INTO Login(UserName, Password, UserID) SELECT UserName, Password, UserID FROM User";
+
             AmendDatabase(dbquery);
-/*            AmendDatabase(query);
-*/
+            AmendDatabase(query);
 
             Form2 f2 = new Form2();
             f2.Show();
-
 
 
         }
 
         private void AmendDatabase(string txtQuery)
         {
-            SQLiteConnection conn = new SQLiteConnection(@"data source = C:\Users\c1009048\Desktop\Inventory\Inventory\inventory.db");
+            SQLiteConnection conn = new SQLiteConnection(@"data source = C:\Users\User\Desktop\KoolKaftan\Inventory\inventory.db");
             conn.Open();
 
             string query = txtQuery;

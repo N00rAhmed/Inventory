@@ -139,6 +139,7 @@
             this.Registerbtn.TabIndex = 11;
             this.Registerbtn.Text = "Register";
             this.Registerbtn.UseVisualStyleBackColor = true;
+            this.Registerbtn.Click += new System.EventHandler(this.Registerbtn_Click);
             // 
             // Form7
             // 

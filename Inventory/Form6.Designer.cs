@@ -76,6 +76,7 @@
             this.loginbtn.TabIndex = 4;
             this.loginbtn.Text = "Login";
             this.loginbtn.UseVisualStyleBackColor = true;
+            this.loginbtn.Click += new System.EventHandler(this.loginbtn_Click);
             // 
             // label3
             // 
@@ -99,6 +100,7 @@
             this.Controls.Add(this.Manageremail);
             this.Name = "Form6";
             this.Text = "Form6";
+            this.Load += new System.EventHandler(this.Form6_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
