@@ -20,7 +20,7 @@ namespace Inventory
         }
         private void LoadData()
         {
-            SQLiteConnection conn = new SQLiteConnection(@"data source =C:\Users\c2012505\Desktop\kool kaftan\Inventory\inventory.db");
+            SQLiteConnection conn = new SQLiteConnection(@"data source = C:\Users\c1009048\Desktop\Inventory\Inventory\inventory.db");
             conn.Open();
 
             string query = "SELECT * FROM Kaftan_Stock";
@@ -44,13 +44,6 @@ namespace Inventory
         private void dgvInventoryViewer_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
-        }
-
-        private void Logoutbtn_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Form1 f1 = new Form1();
-            f1.Show();
         }
     }
 }
