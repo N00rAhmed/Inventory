@@ -21,7 +21,7 @@ namespace Inventory
         }
         private void LoadData()
         {
-            SQLiteConnection conn = new SQLiteConnection(@"data source = C:\Users\c2012505\Desktop\kool kaftan\Inventory");
+            SQLiteConnection conn = new SQLiteConnection(@"data source = C:\Users\c1009048\Desktop\Inventory\Inventory\inventory.db");
             conn.Open();
 
             string query = "SELECT * FROM Kaftan_Stock";
@@ -44,7 +44,7 @@ namespace Inventory
 
         private void AmendDatabase(string txtQuery)
         {
-            SQLiteConnection conn = new SQLiteConnection(@"data source = C:\Users\c2012505\Desktop\kool kaftan\Inventory");
+            SQLiteConnection conn = new SQLiteConnection(@"data source = C:\Users\c1009048\Desktop\TSK-APP\taskAppDB.db");
             conn.Open();
 
             string query = txtQuery;
@@ -65,13 +65,6 @@ namespace Inventory
         private void Form5_Load(object sender, EventArgs e)
         {
 
-        }
-
-        private void Logoutbtn_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Form1 f1 = new Form1();
-            f1.Show();
         }
     }
 }
