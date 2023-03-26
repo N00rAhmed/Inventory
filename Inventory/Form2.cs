@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using System.Data.SqlClient;
 using System.Data.SQLite;
 
 namespace Inventory
@@ -15,7 +16,7 @@ namespace Inventory
     public partial class Form2 : Form
     {
         DataTable dt = new DataTable();
-        public static string Uid = "";
+        public static string uid = "";
 
         public Form2()
         {
@@ -44,10 +45,10 @@ namespace Inventory
                 DataRow dr = dt.Rows[i];
                 if (dr["UserName"].ToString() == userNametxt.Text && dr["Password"].ToString() == Passwordtxt.Text)
                 {
-                    Uid = dr["UserID"].ToString();
+                    uid = dr["UserID"].ToString();
 
-                    Form4 f3 = new Form4();
-                    f3.Show();
+                    Form4 f4 = new Form4();
+                    f4.Show();
                     login = true;
                     break;
                 }

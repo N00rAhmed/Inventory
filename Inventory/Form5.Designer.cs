@@ -44,6 +44,7 @@
             this.DeleteBtn = new System.Windows.Forms.Button();
             this.IDField = new System.Windows.Forms.TextBox();
             this.UpdateBtn = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInventoryCRUD)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,9 +60,9 @@
             // dgvInventoryCRUD
             // 
             this.dgvInventoryCRUD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvInventoryCRUD.Location = new System.Drawing.Point(40, 90);
+            this.dgvInventoryCRUD.Location = new System.Drawing.Point(12, 90);
             this.dgvInventoryCRUD.Name = "dgvInventoryCRUD";
-            this.dgvInventoryCRUD.Size = new System.Drawing.Size(739, 276);
+            this.dgvInventoryCRUD.Size = new System.Drawing.Size(855, 276);
             this.dgvInventoryCRUD.TabIndex = 1;
             this.dgvInventoryCRUD.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInventoryCRUD_CellContentClick);
             // 
@@ -167,7 +168,7 @@
             // 
             // IDField
             // 
-            this.IDField.Location = new System.Drawing.Point(322, 435);
+            this.IDField.Location = new System.Drawing.Point(320, 436);
             this.IDField.Name = "IDField";
             this.IDField.Size = new System.Drawing.Size(65, 20);
             this.IDField.TabIndex = 14;
@@ -183,11 +184,22 @@
             this.UpdateBtn.UseVisualStyleBackColor = true;
             this.UpdateBtn.Click += new System.EventHandler(this.UpdateBtn_Click);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(296, 439);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(18, 13);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "ID";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
+            // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(879, 522);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.UpdateBtn);
             this.Controls.Add(this.IDField);
             this.Controls.Add(this.DeleteBtn);
@@ -231,5 +243,6 @@
         private System.Windows.Forms.Button DeleteBtn;
         private System.Windows.Forms.TextBox IDField;
         private System.Windows.Forms.Button UpdateBtn;
+        private System.Windows.Forms.Label label7;
     }
 }

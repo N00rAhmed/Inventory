@@ -48,7 +48,7 @@ namespace Inventory
             this.Hide();
 
             string dbquery = "INSERT INTO UserAdmin(Name, LastName, UserName, Password, Email)" + "VALUES ('" + Mngfname.Text + "', '" + mngLname.Text + "', '" + Mngusername.Text + "', '" + Mngpassword.Text + "', '" + mngEmail.Text + "')";
-            string query = "INSERT INTO Admin(Email, Password, UserAdminID) SELECT Email, Password, UserAdminID FROM UserAdmin";
+            string query = "INSERT INTO LoginAdmin(Email, Password, UserAdminID) SELECT Email, Password, UserAdminID FROM UserAdmin";
 
             AmendDatabase(dbquery);
             AmendDatabase(query);
