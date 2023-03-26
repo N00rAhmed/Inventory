@@ -44,28 +44,10 @@ namespace Inventory
         void CheckBuffer()
         {
             int rowCount = dgvStockLimit.Rows.Count;
-            int bufferLimit = 0;
-            SQLiteConnection connection = new SQLiteConnection(@"data source = C:\Users\ethan\Documents\C#\Inventory\Inventory\inventory.db");
-            connection.Open();
-            // Get Current BufferLimit from database
-            using (SQLiteCommand cmd = new SQLiteCommand())
-            {
-                cmd.Connection = connection;
-                cmd.CommandType = System.Data.CommandType.Text;
-                cmd.CommandText = "SELECT * FROM StockLimit";
 
-                // execute query and get data reader
-                using (SQLiteDataReader reader = cmd.ExecuteReader())
-                {
-                    reader.Read();
-                    bufferLimit = reader.GetInt32(0);
-                }
-                connection.Close();
-            }
-            txtBufferLimit.Text = bufferLimit.ToString(); // Set textbox to have set limit in db
             // loop through each cell
             for (int row = 3; row < rowCount; row++)
-             {
+            {
                 DataGridViewCell bufferCell = dgvStockLimit.Rows[row].Cells["Buffer"];
                 DataGridViewCell detailCell = dgvStockLimit.Rows[row].Cells["Detail"];
                 if (bufferCell.Value != null && detailCell.Value != null && bufferCell.Value.ToString() != null && bufferCell.Value.ToString() != "")
@@ -78,10 +60,10 @@ namespace Inventory
                     {
                         MessageBox.Show(ex.Message);
                     }
-                    if (bufferValue > bufferLimit)
+                    if (bufferValue > 10)
                     {
                         //label1.Text = dgvStockLimit.Rows[row].Cells["Buffer"].Value.ToString();
-                        //SendEmail(detailCell.Value.ToString(), bufferCell.Value.ToString());
+                        SendEmail(detailCell.Value.ToString(), bufferCell.Value.ToString());
                    }
                 }
             }
@@ -127,19 +109,6 @@ namespace Inventory
                 MessageBox.Show("Error sending email: " + ex.Message);
             }
         }
-
-        void btnSubmit_Click(object sender, EventArgs e)
-        {
-            label1.Text = txtBufferLimit.Text;
-            string insertQuery = "UPDATE StockLimit SET \"Limit\" = " + txtBufferLimit.Text.ToString();
-            SQLiteConnection connection = new SQLiteConnection(@"data source = C:\Users\ethan\Documents\C#\Inventory\Inventory\inventory.db");
-            connection.Open();
-            SQLiteCommand query = new SQLiteCommand(insertQuery, connection);
-            query.ExecuteNonQuery();
-            connection.Close();
-        }
-
-
         /* -- Might be useful e
         private void dgvStockLimit_UserDeletingRow(object sender, DataGridViewRowCancelEventArgs e)
         {
