@@ -23,7 +23,7 @@ namespace Inventory
             SQLiteConnection conn = new SQLiteConnection(@"data source = C:\Users\User\Desktop\KoolKaftan\Inventory\inventory.db");
             conn.Open();
 
-            string query = "SELECT Email, Password, AdminID from Admin";
+            string query = "SELECT Email, Password, AdminID from LoginAdmin";
             SQLiteCommand cmd = new SQLiteCommand(query, conn);
 
 
