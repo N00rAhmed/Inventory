@@ -9,7 +9,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.Data.SqlClient;
 
+
+
+
+/*System.Data.SQLite.SQLiteException: 'database is locked
+database is locked'
+*/
 namespace Inventory
 {
     public partial class Form5 : Form
@@ -52,10 +59,51 @@ namespace Inventory
             cmd.ExecuteNonQuery();
 
             conn.Close();
+            Product.Text = "";
+            Category.Text = "";
+            Price.Text = "";
+            Units.Text = "";
+            Supplier.Text = "";
 /*            textBox1.Text = "";
 */        }
 
+        private void AddBtn_Click(object sender, EventArgs e)
+        {
+            string dbquery = "INSERT INTO Kaftan_Stock(Items, Detail, Buffer, Price, Manufactorer)" + "VALUES ('" + Product.Text + "','" + Category.Text + "','" + Units.Text + "','" + Price.Text + "','" + Supplier.Text + "')";
 
+            AmendDatabase(dbquery);
+
+            LoadData();
+
+        }
+
+        private void DeleteBtn_Click(object sender, EventArgs e)
+        {
+            string dbquery = "DELETE FROM Kaftan_Stock WHERE StockID = '" + IDField.Text + "'";
+            AmendDatabase(dbquery);
+            LoadData();
+
+        }
+
+        private void UpdateBtn_Click(object sender, EventArgs e)
+        {
+            string dbquery = "Update Kaftan_Stock set Items='" + Product.Text + "' where StockID = '" + IDField.Text + "'";
+            string query = "Update Kaftan_Stock set Detail ='" + Category.Text + "' where StockID = '" + IDField.Text + "'";
+            string query2 = "Update Kaftan_Stock set Buffer ='" + Units.Text + "' where StockID = '" + IDField.Text + "'";
+            string query3 = "Update Kaftan_Stock set Price ='" + Price.Text + "' where StockID = '" + IDField.Text + "'";
+            string query4 = "Update Kaftan_Stock set Manufactorer ='" + Supplier.Text + "' where StockID = '" + IDField.Text + "'";
+
+
+            AmendDatabase(dbquery);
+            AmendDatabase(query);
+            AmendDatabase(query2);
+            AmendDatabase(query3);
+            AmendDatabase(query4);
+
+            LoadData();
+            
+
+        }
 
         private void dgvInventoryCRUD_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -66,5 +114,11 @@ namespace Inventory
         {
 
         }
+
+        private void IDField_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

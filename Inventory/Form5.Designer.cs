@@ -40,6 +40,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.AddBtn = new System.Windows.Forms.Button();
+            this.DeleteBtn = new System.Windows.Forms.Button();
+            this.IDField = new System.Windows.Forms.TextBox();
+            this.UpdateBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInventoryCRUD)).BeginInit();
             this.SuspendLayout();
             // 
@@ -141,11 +145,53 @@
             this.label6.TabIndex = 11;
             this.label6.Text = "supplier";
             // 
+            // AddBtn
+            // 
+            this.AddBtn.Location = new System.Drawing.Point(404, 385);
+            this.AddBtn.Name = "AddBtn";
+            this.AddBtn.Size = new System.Drawing.Size(98, 35);
+            this.AddBtn.TabIndex = 12;
+            this.AddBtn.Text = "Add";
+            this.AddBtn.UseVisualStyleBackColor = true;
+            this.AddBtn.Click += new System.EventHandler(this.AddBtn_Click);
+            // 
+            // DeleteBtn
+            // 
+            this.DeleteBtn.Location = new System.Drawing.Point(404, 428);
+            this.DeleteBtn.Name = "DeleteBtn";
+            this.DeleteBtn.Size = new System.Drawing.Size(98, 35);
+            this.DeleteBtn.TabIndex = 13;
+            this.DeleteBtn.Text = "Delete";
+            this.DeleteBtn.UseVisualStyleBackColor = true;
+            this.DeleteBtn.Click += new System.EventHandler(this.DeleteBtn_Click);
+            // 
+            // IDField
+            // 
+            this.IDField.Location = new System.Drawing.Point(322, 435);
+            this.IDField.Name = "IDField";
+            this.IDField.Size = new System.Drawing.Size(65, 20);
+            this.IDField.TabIndex = 14;
+            this.IDField.TextChanged += new System.EventHandler(this.IDField_TextChanged);
+            // 
+            // UpdateBtn
+            // 
+            this.UpdateBtn.Location = new System.Drawing.Point(404, 479);
+            this.UpdateBtn.Name = "UpdateBtn";
+            this.UpdateBtn.Size = new System.Drawing.Size(98, 35);
+            this.UpdateBtn.TabIndex = 15;
+            this.UpdateBtn.Text = "Update";
+            this.UpdateBtn.UseVisualStyleBackColor = true;
+            this.UpdateBtn.Click += new System.EventHandler(this.UpdateBtn_Click);
+            // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(879, 522);
+            this.Controls.Add(this.UpdateBtn);
+            this.Controls.Add(this.IDField);
+            this.Controls.Add(this.DeleteBtn);
+            this.Controls.Add(this.AddBtn);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -181,5 +227,9 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button AddBtn;
+        private System.Windows.Forms.Button DeleteBtn;
+        private System.Windows.Forms.TextBox IDField;
+        private System.Windows.Forms.Button UpdateBtn;
     }
 }
