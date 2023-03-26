@@ -109,16 +109,21 @@ namespace Inventory
                 MessageBox.Show("Error sending email: " + ex.Message);
             }
         }
-        /* -- Might be useful e
-        private void dgvStockLimit_UserDeletingRow(object sender, DataGridViewRowCancelEventArgs e)
+
+        private void Form9_Load(object sender, EventArgs e)
         {
-            string insertQuery = "DELETE FROM StockLimit WHERE StockID = @param1";
-            SQLiteConnection connection = new SQLiteConnection(@"data source = C:\Users\ethan\Documents\C#\Inventory\Inventory\inventory.db");
-            connection.Open();
-            SQLiteCommand query = new SQLiteCommand(insertQuery, connection);
-            query.Parameters.AddWithValue("@param1", e.Row.Cells[0].Value);
-            query.ExecuteNonQuery();
-            connection.Close();
-        }*/
+
+        }
+        /* -- Might be useful e
+private void dgvStockLimit_UserDeletingRow(object sender, DataGridViewRowCancelEventArgs e)
+{
+   string insertQuery = "DELETE FROM StockLimit WHERE StockID = @param1";
+   SQLiteConnection connection = new SQLiteConnection(@"data source = C:\Users\ethan\Documents\C#\Inventory\Inventory\inventory.db");
+   connection.Open();
+   SQLiteCommand query = new SQLiteCommand(insertQuery, connection);
+   query.Parameters.AddWithValue("@param1", e.Row.Cells[0].Value);
+   query.ExecuteNonQuery();
+   connection.Close();
+}*/
     }
 }

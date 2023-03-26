@@ -49,6 +49,7 @@
             this.Controls.Add(this.dgvStockLimit);
             this.Name = "Form9";
             this.Text = "Form9";
+            this.Load += new System.EventHandler(this.Form9_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvStockLimit)).EndInit();
             this.ResumeLayout(false);
 
