@@ -79,7 +79,7 @@ namespace Inventory
                     {
                         MessageBox.Show(ex.Message);
                     }
-                    if (bufferValue > bufferLimit)
+                    if (bufferValue < bufferLimit)
                     {
                         //label1.Text = dgvStockLimit.Rows[row].Cells["Buffer"].Value.ToString();
                         //SendEmail(detailCell.Value.ToString(), bufferCell.Value.ToString());
