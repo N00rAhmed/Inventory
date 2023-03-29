@@ -2,17 +2,14 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.Entity.Core.Common.CommandTrees.ExpressionBuilder;
 using System.Data.SQLite;
 using System.Drawing;
 using System.Linq;
-using System.Net;
 using System.Net.Mail;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.Tab;
-using System.Xml.Linq;
 
 namespace Inventory
 {
@@ -22,7 +19,24 @@ namespace Inventory
         {
             InitializeComponent();
             LoadData();
+
         }
+
+        private void Form9_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvStockLimit_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void txtBufferLimit_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void LoadData()
         {
             SQLiteConnection conn = new SQLiteConnection(@"data source = C:\Users\User\Desktop\KoolKaftan\Inventory\inventory.db");
@@ -40,6 +54,7 @@ namespace Inventory
             conn.Close();
             CheckBuffer();
         }
+
 
         void CheckBuffer()
         {
@@ -82,11 +97,12 @@ namespace Inventory
                     if (bufferValue < bufferLimit)
                     {
                         //label1.Text = dgvStockLimit.Rows[row].Cells["Buffer"].Value.ToString();
-                        //SendEmail(detailCell.Value.ToString(), bufferCell.Value.ToString());
+                        SendEmail(detailCell.Value.ToString(), bufferCell.Value.ToString());
                     }
                 }
             }
         }
+
 
         void SendEmail(string name, string value)
         {
@@ -119,17 +135,18 @@ namespace Inventory
                 Subject = emailSubject,
                 Body = emailBody
             })
-            try
-            {
-                smtp.Send(message);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error sending email: " + ex.Message);
-            }
+                try
+                {
+                    smtp.Send(message);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error sending email: " + ex.Message);
+                }
         }
 
-        void btnSubmit_Click(object sender, EventArgs e)
+
+        private void btnSubmit_Click(object sender, EventArgs e)
         {
             string insertQuery = "UPDATE StockLimit SET \"Limit\" = " + txtBufferLimit.Text.ToString();
             SQLiteConnection connection = new SQLiteConnection(@"data source = C:\Users\User\Desktop\KoolKaftan\Inventory\inventory.db");
@@ -137,17 +154,7 @@ namespace Inventory
             SQLiteCommand query = new SQLiteCommand(insertQuery, connection);
             query.ExecuteNonQuery();
             connection.Close();
+
         }
-        /* -- Might be useful e
-private void dgvStockLimit_UserDeletingRow(object sender, DataGridViewRowCancelEventArgs e)
-{
-   string insertQuery = "DELETE FROM StockLimit WHERE StockID = @param1";
-   SQLiteConnection connection = new SQLiteConnection(@"data source = C:\Users\ethan\Documents\C#\Inventory\Inventory\inventory.db");
-   connection.Open();
-   SQLiteCommand query = new SQLiteCommand(insertQuery, connection);
-   query.Parameters.AddWithValue("@param1", e.Row.Cells[0].Value);
-   query.ExecuteNonQuery();
-   connection.Close();
-}*/
     }
 }

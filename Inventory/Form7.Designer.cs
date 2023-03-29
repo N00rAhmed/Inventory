@@ -40,6 +40,11 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.Registerbtn = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.Titletxtbox = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Mngfname
@@ -125,7 +130,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(342, 32);
+            this.label5.Location = new System.Drawing.Point(340, 18);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(91, 13);
             this.label5.TabIndex = 10;
@@ -141,13 +146,53 @@
             this.Registerbtn.UseVisualStyleBackColor = true;
             this.Registerbtn.Click += new System.EventHandler(this.Registerbtn_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(127)))), ((int)(((byte)(24)))));
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Location = new System.Drawing.Point(2, 40);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(797, 61);
+            this.panel1.TabIndex = 12;
+            // 
+            // Titletxtbox
+            // 
+            this.Titletxtbox.Font = new System.Drawing.Font("Harlow Solid Italic", 20.25F, System.Drawing.FontStyle.Italic);
+            this.Titletxtbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.Titletxtbox.Location = new System.Drawing.Point(2, 0);
+            this.Titletxtbox.Name = "Titletxtbox";
+            this.Titletxtbox.Size = new System.Drawing.Size(76, 42);
+            this.Titletxtbox.TabIndex = 13;
+            this.Titletxtbox.Text = "Cool";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Harlow Solid Italic", 20.25F, System.Drawing.FontStyle.Italic);
+            this.textBox1.ForeColor = System.Drawing.Color.DarkOliveGreen;
+            this.textBox1.Location = new System.Drawing.Point(71, 0);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(96, 42);
+            this.textBox1.TabIndex = 14;
+            this.textBox1.Text = "Kaftan";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(127)))), ((int)(((byte)(24)))));
+            this.panel2.Location = new System.Drawing.Point(2, 389);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(797, 61);
+            this.panel2.TabIndex = 15;
+            // 
             // Form7
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Titletxtbox);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.Registerbtn);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -161,6 +206,8 @@
             this.Name = "Form7";
             this.Text = "Form7";
             this.Load += new System.EventHandler(this.Form7_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -180,5 +227,9 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button Registerbtn;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox Titletxtbox;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Panel panel2;
     }
 }

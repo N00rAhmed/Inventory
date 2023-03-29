@@ -31,6 +31,10 @@
             this.Create_account = new System.Windows.Forms.Button();
             this.Login = new System.Windows.Forms.Button();
             this.ManagerBtn = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.Titletxtbox = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // Create_account
@@ -63,11 +67,51 @@
             this.ManagerBtn.UseVisualStyleBackColor = true;
             this.ManagerBtn.Click += new System.EventHandler(this.ManagerBtn_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(127)))), ((int)(((byte)(24)))));
+            this.panel1.Location = new System.Drawing.Point(0, 37);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(797, 53);
+            this.panel1.TabIndex = 4;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(127)))), ((int)(((byte)(24)))));
+            this.panel2.Location = new System.Drawing.Point(0, 378);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(797, 74);
+            this.panel2.TabIndex = 8;
+            // 
+            // Titletxtbox
+            // 
+            this.Titletxtbox.Font = new System.Drawing.Font("Harlow Solid Italic", 20.25F, System.Drawing.FontStyle.Italic);
+            this.Titletxtbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.Titletxtbox.Location = new System.Drawing.Point(0, -3);
+            this.Titletxtbox.Name = "Titletxtbox";
+            this.Titletxtbox.Size = new System.Drawing.Size(76, 42);
+            this.Titletxtbox.TabIndex = 9;
+            this.Titletxtbox.Text = "Cool";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Harlow Solid Italic", 20.25F, System.Drawing.FontStyle.Italic);
+            this.textBox1.ForeColor = System.Drawing.Color.DarkOliveGreen;
+            this.textBox1.Location = new System.Drawing.Point(67, -3);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(96, 42);
+            this.textBox1.TabIndex = 10;
+            this.textBox1.Text = "Kaftan";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Titletxtbox);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.ManagerBtn);
             this.Controls.Add(this.Login);
             this.Controls.Add(this.Create_account);
@@ -75,6 +119,7 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -83,6 +128,10 @@
         private System.Windows.Forms.Button Create_account;
         private System.Windows.Forms.Button Login;
         private System.Windows.Forms.Button ManagerBtn;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.TextBox Titletxtbox;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
