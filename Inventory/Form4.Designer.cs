@@ -34,6 +34,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.LogoutBTN1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInventoryViewer)).BeginInit();
             this.SuspendLayout();
             // 
@@ -94,11 +95,22 @@
             this.label7.TabIndex = 22;
             this.label7.Text = "Kaftan";
             // 
+            // LogoutBTN1
+            // 
+            this.LogoutBTN1.Location = new System.Drawing.Point(713, 12);
+            this.LogoutBTN1.Name = "LogoutBTN1";
+            this.LogoutBTN1.Size = new System.Drawing.Size(75, 23);
+            this.LogoutBTN1.TabIndex = 25;
+            this.LogoutBTN1.Text = "Logout";
+            this.LogoutBTN1.UseVisualStyleBackColor = true;
+            this.LogoutBTN1.Click += new System.EventHandler(this.LogoutBTN1_Click);
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.LogoutBTN1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.panel2);
@@ -122,5 +134,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button LogoutBTN1;
     }
 }
