@@ -82,8 +82,9 @@ namespace Inventory
             for (int row = 3; row < rowCount; row++)
             {
                 DataGridViewCell bufferCell = dgvStockLimit.Rows[row].Cells["Buffer"];
+                DataGridViewCell itemCell = dgvStockLimit.Rows[row].Cells["Items"];
                 DataGridViewCell detailCell = dgvStockLimit.Rows[row].Cells["Detail"];
-                if (bufferCell.Value != null && detailCell.Value != null && bufferCell.Value.ToString() != null && bufferCell.Value.ToString() != "")
+                if (bufferCell.Value != null && detailCell.Value != null && itemCell.Value != null && bufferCell.Value.ToString() != null && bufferCell.Value.ToString() != "" && itemCell.Value.ToString() != "")
                 {
                     int bufferValue = 0;
                     try
@@ -97,19 +98,19 @@ namespace Inventory
                     if (bufferValue < bufferLimit)
                     {
                         //label1.Text = dgvStockLimit.Rows[row].Cells["Buffer"].Value.ToString();
-                        SendEmail(detailCell.Value.ToString(), bufferCell.Value.ToString());
+                        SendEmail(itemCell.Value.ToString(),detailCell.Value.ToString(), bufferCell.Value.ToString());
                     }
                 }
             }
         }
 
 
-        void SendEmail(string name, string value)
+        void SendEmail(string name, string detail, string value)
         {
             string fromEmail = "testing2398462394623@outlook.com";
             string toEmail = "Tronn232003@gmail.com"; // Replace with the user's email address
             string emailSubject = "Stock Alert";
-            string emailBody = $"Product buffer {name} has more than {value}.";
+            string emailBody = $"Product buffer {name} {detail} has more than {value}.";
 
             MailMessage mail = new MailMessage
             {
@@ -154,7 +155,7 @@ namespace Inventory
             SQLiteCommand query = new SQLiteCommand(insertQuery, connection);
             query.ExecuteNonQuery();
             connection.Close();
-
+            CheckBuffer();
         }
     }
 }
