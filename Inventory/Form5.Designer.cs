@@ -48,6 +48,10 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.Titletxtbox = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.LimitBtn = new System.Windows.Forms.Button();
+            this.ScannerBtn = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInventoryCRUD)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -229,11 +233,53 @@
             this.textBox1.Text = "Kaftan";
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
+            // LimitBtn
+            // 
+            this.LimitBtn.Location = new System.Drawing.Point(671, 387);
+            this.LimitBtn.Name = "LimitBtn";
+            this.LimitBtn.Size = new System.Drawing.Size(92, 42);
+            this.LimitBtn.TabIndex = 20;
+            this.LimitBtn.Text = "Stock Limit";
+            this.LimitBtn.UseVisualStyleBackColor = true;
+            this.LimitBtn.Click += new System.EventHandler(this.LimitBtn_Click);
+            // 
+            // ScannerBtn
+            // 
+            this.ScannerBtn.Location = new System.Drawing.Point(671, 439);
+            this.ScannerBtn.Name = "ScannerBtn";
+            this.ScannerBtn.Size = new System.Drawing.Size(110, 42);
+            this.ScannerBtn.TabIndex = 21;
+            this.ScannerBtn.Text = "Barcode Scanner";
+            this.ScannerBtn.UseVisualStyleBackColor = true;
+            this.ScannerBtn.Click += new System.EventHandler(this.ScannerBtn_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(587, 402);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(78, 13);
+            this.label8.TabIndex = 22;
+            this.label8.Text = "Set Stock Limit";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(587, 449);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(75, 13);
+            this.label9.TabIndex = 23;
+            this.label9.Text = "Scan Barcode";
+            // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(879, 522);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.ScannerBtn);
+            this.Controls.Add(this.LimitBtn);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.Titletxtbox);
             this.Controls.Add(this.panel1);
@@ -286,5 +332,9 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox Titletxtbox;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button LimitBtn;
+        private System.Windows.Forms.Button ScannerBtn;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
     }
 }
