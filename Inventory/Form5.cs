@@ -134,5 +134,21 @@ namespace Inventory
         {
 
         }
+
+        private void LimitBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form9 f9 = new Form9();
+            f9.Show();
+
+        }
+
+        private void ScannerBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form10 f10 = new Form10();
+            f10.Show();
+
+        }
     }
 }
