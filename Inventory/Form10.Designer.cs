@@ -33,6 +33,7 @@
             this.pictureBox = new System.Windows.Forms.PictureBox();
             this.cboCamera = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnScan = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -78,11 +79,21 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Camera Device";
             // 
+            // btnScan
+            // 
+            this.btnScan.Location = new System.Drawing.Point(488, 417);
+            this.btnScan.Name = "btnScan";
+            this.btnScan.Size = new System.Drawing.Size(75, 23);
+            this.btnScan.TabIndex = 5;
+            this.btnScan.Text = "Scan";
+            this.btnScan.UseVisualStyleBackColor = true;
+            // 
             // Form10
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnScan);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cboCamera);
             this.Controls.Add(this.pictureBox);
@@ -104,5 +115,6 @@
         private System.Windows.Forms.PictureBox pictureBox;
         private System.Windows.Forms.ComboBox cboCamera;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnScan;
     }
 }
