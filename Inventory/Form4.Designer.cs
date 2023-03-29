@@ -103,6 +103,7 @@
             this.LogoutBTN1.TabIndex = 25;
             this.LogoutBTN1.Text = "Logout";
             this.LogoutBTN1.UseVisualStyleBackColor = true;
+            this.LogoutBTN1.Click += new System.EventHandler(this.LogoutBTN1_Click);
             // 
             // Form4
             // 
