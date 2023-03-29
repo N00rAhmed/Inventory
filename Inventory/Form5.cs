@@ -153,6 +153,9 @@ namespace Inventory
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            Form1 f1 = new Form1();
+            f1.Show();
 
         }
     }
