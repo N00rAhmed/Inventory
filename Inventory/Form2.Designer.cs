@@ -43,7 +43,8 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(360, 123);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(352, 120);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(48, 20);
             this.label1.TabIndex = 0;
@@ -112,21 +113,21 @@
             // 
             // Titletxtbox
             // 
-            this.Titletxtbox.Font = new System.Drawing.Font("Harlow Solid Italic", 20.25F, System.Drawing.FontStyle.Italic);
+            this.Titletxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Italic);
             this.Titletxtbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.Titletxtbox.Location = new System.Drawing.Point(2, -2);
             this.Titletxtbox.Name = "Titletxtbox";
-            this.Titletxtbox.Size = new System.Drawing.Size(76, 42);
+            this.Titletxtbox.Size = new System.Drawing.Size(76, 38);
             this.Titletxtbox.TabIndex = 10;
             this.Titletxtbox.Text = "Cool";
             // 
             // textBox1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Harlow Solid Italic", 20.25F, System.Drawing.FontStyle.Italic);
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Italic);
             this.textBox1.ForeColor = System.Drawing.Color.DarkOliveGreen;
             this.textBox1.Location = new System.Drawing.Point(71, -2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(96, 42);
+            this.textBox1.Size = new System.Drawing.Size(96, 38);
             this.textBox1.TabIndex = 11;
             this.textBox1.Text = "Kaftan";
             // 
