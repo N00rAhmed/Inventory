@@ -22,7 +22,7 @@ namespace Inventory
         }
         private void LoadData()
         {
-            SQLiteConnection conn = new SQLiteConnection(Inventory.DB.DBLocation);
+            SQLiteConnection conn = new SQLiteConnection(DB.DBLocation);
             conn.Open();
 
             string query = "SELECT * FROM Kaftan_Stock";

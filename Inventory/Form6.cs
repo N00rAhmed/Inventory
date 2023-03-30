@@ -21,7 +21,7 @@ namespace Inventory
         {
             InitializeComponent();
 
-            SQLiteConnection conn = new SQLiteConnection(Inventory.DB.DBLocation);
+            SQLiteConnection conn = new SQLiteConnection(DB.DBLocation);
             conn.Open();
 
             string query = "SELECT Email, Password, UserAdminID from UserAdmin";

@@ -32,13 +32,12 @@ namespace Inventory
             f2.Show();
         }
 
-        private void AmendDatabase(string txtQuery)
+        private void AmendDatabase(string dbQuery)
         {
-            SQLiteConnection conn = new SQLiteConnection(Inventory.DB.DBLocation);
+            SQLiteConnection conn = new SQLiteConnection(DB.DBLocation);
             conn.Open();
 
-            string query = txtQuery;
-            SQLiteCommand cmd = new SQLiteCommand(query, conn);
+            SQLiteCommand cmd = new SQLiteCommand(dbQuery, conn);
             cmd.ExecuteNonQuery();
 
             conn.Close();

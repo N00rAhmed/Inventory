@@ -37,14 +37,14 @@ namespace Inventory
 
             dgvStockLimit.DataSource = dt;
             conn.Close();
-            CheckBuffer();
+            //CheckBuffer();
         }
 
         void CheckBuffer()
         {
             int rowCount = dgvStockLimit.Rows.Count;
             int bufferLimit = 0;
-            SQLiteConnection connection = new SQLiteConnection(Inventory.DB.DBLocation);
+            SQLiteConnection connection = new SQLiteConnection(DB.DBLocation);
             connection.Open();
             // Get Current BufferLimit from database
             using (SQLiteCommand cmd = new SQLiteCommand())
@@ -88,7 +88,6 @@ namespace Inventory
             }
         }
 
-
         void SendEmail(string name, string detail, string value)
         {
             string fromEmail = "testing2398462394623@outlook.com";
@@ -130,11 +129,10 @@ namespace Inventory
                 }
         }
 
-
         private void btnSubmit_Click(object sender, EventArgs e)
         {
             string insertQuery = "UPDATE StockLimit SET \"Limit\" = " + txtBufferLimit.Text.ToString();
-            SQLiteConnection connection = new SQLiteConnection(Inventory.DB.DBLocation);
+            SQLiteConnection connection = new SQLiteConnection(DB.DBLocation);
             connection.Open();
             SQLiteCommand query = new SQLiteCommand(insertQuery, connection);
             query.ExecuteNonQuery();

@@ -22,7 +22,7 @@ namespace Inventory
         public Form2()
         {
             InitializeComponent();
-            SQLiteConnection conn = new SQLiteConnection(Inventory.DB.DBLocation);
+            SQLiteConnection conn = new SQLiteConnection(DB.DBLocation);
             conn.Open();
 
             string query = "SELECT UserName, Password, UserID from User";
