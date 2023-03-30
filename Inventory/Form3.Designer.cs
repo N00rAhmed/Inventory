@@ -76,7 +76,6 @@
             this.Firstnametxtbox.Name = "Firstnametxtbox";
             this.Firstnametxtbox.Size = new System.Drawing.Size(163, 20);
             this.Firstnametxtbox.TabIndex = 2;
-            this.Firstnametxtbox.TextChanged += new System.EventHandler(this.Firstnametxtbox_TextChanged);
             // 
             // lastnametxtbox
             // 
@@ -212,7 +211,6 @@
             this.MinimumSize = new System.Drawing.Size(820, 490);
             this.Name = "Form3";
             this.Text = "Form3";
-            this.Load += new System.EventHandler(this.Form3_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

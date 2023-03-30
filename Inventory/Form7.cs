@@ -20,13 +20,9 @@ namespace Inventory
             InitializeComponent();
         }
 
-        private void Form7_Load(object sender, EventArgs e)
-        {
-
-        }
         private void AmendDatabase(string txtQuery)
         {
-            SQLiteConnection conn = new SQLiteConnection(@"data source = C:\Users\User\Desktop\KoolKaftan\Inventory\inventory.db");
+            SQLiteConnection conn = new SQLiteConnection(Inventory.DB.DBLocation);
             conn.Open();
 
             string query = txtQuery;
@@ -34,13 +30,12 @@ namespace Inventory
             cmd.ExecuteNonQuery();
 
             conn.Close();
+            // Reset text fields
             Mngfname.Text = "";
             mngLname.Text = "";
             mngEmail.Text = "";
             Mngusername.Text = "";
             Mngpassword.Text = "";
-
-
         }
 
         private void Registerbtn_Click(object sender, EventArgs e)
@@ -55,7 +50,6 @@ namespace Inventory
 
             Form6 f6 = new Form6();
             f6.Show();
-
         }
     }
 }

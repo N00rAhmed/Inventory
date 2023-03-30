@@ -96,10 +96,11 @@
             this.loginbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.loginbtn.Location = new System.Drawing.Point(349, 277);
+            this.loginbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginbtn.Location = new System.Drawing.Point(344, 278);
             this.loginbtn.MinimumSize = new System.Drawing.Size(75, 23);
             this.loginbtn.Name = "loginbtn";
-            this.loginbtn.Size = new System.Drawing.Size(75, 23);
+            this.loginbtn.Size = new System.Drawing.Size(79, 29);
             this.loginbtn.TabIndex = 4;
             this.loginbtn.Text = "Login";
             this.loginbtn.UseVisualStyleBackColor = true;
@@ -131,21 +132,21 @@
             // 
             // Titletxtbox
             // 
-            this.Titletxtbox.Font = new System.Drawing.Font("Harlow Solid Italic", 20.25F, System.Drawing.FontStyle.Italic);
+            this.Titletxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Italic);
             this.Titletxtbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.Titletxtbox.Location = new System.Drawing.Point(2, 0);
             this.Titletxtbox.Name = "Titletxtbox";
-            this.Titletxtbox.Size = new System.Drawing.Size(76, 42);
+            this.Titletxtbox.Size = new System.Drawing.Size(76, 38);
             this.Titletxtbox.TabIndex = 10;
             this.Titletxtbox.Text = "Cool";
             // 
             // textBox1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Harlow Solid Italic", 20.25F, System.Drawing.FontStyle.Italic);
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Italic);
             this.textBox1.ForeColor = System.Drawing.Color.DarkOliveGreen;
             this.textBox1.Location = new System.Drawing.Point(71, 0);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(96, 42);
+            this.textBox1.Size = new System.Drawing.Size(96, 38);
             this.textBox1.TabIndex = 11;
             this.textBox1.Text = "Kaftan";
             // 
@@ -161,7 +162,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(734, 450);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.Titletxtbox);
@@ -174,7 +175,6 @@
             this.MinimumSize = new System.Drawing.Size(816, 289);
             this.Name = "Form6";
             this.Text = "Form6";
-            this.Load += new System.EventHandler(this.Form6_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

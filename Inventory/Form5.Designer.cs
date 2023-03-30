@@ -68,7 +68,6 @@
             this.label1.Size = new System.Drawing.Size(192, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Manager Inventory CRUD";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // dgvInventoryCRUD
             // 
@@ -80,7 +79,6 @@
             this.dgvInventoryCRUD.Name = "dgvInventoryCRUD";
             this.dgvInventoryCRUD.Size = new System.Drawing.Size(881, 276);
             this.dgvInventoryCRUD.TabIndex = 1;
-            this.dgvInventoryCRUD.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInventoryCRUD_CellContentClick);
             // 
             // Category
             // 
@@ -213,7 +211,6 @@
             this.IDField.Name = "IDField";
             this.IDField.Size = new System.Drawing.Size(65, 20);
             this.IDField.TabIndex = 14;
-            this.IDField.TextChanged += new System.EventHandler(this.IDField_TextChanged);
             // 
             // UpdateBtn
             // 
@@ -237,7 +234,6 @@
             this.label7.Size = new System.Drawing.Size(26, 20);
             this.label7.TabIndex = 16;
             this.label7.Text = "ID";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // panel1
             // 
@@ -272,7 +268,6 @@
             this.textBox1.Size = new System.Drawing.Size(96, 31);
             this.textBox1.TabIndex = 19;
             this.textBox1.Text = "Kaftan";
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // LimitBtn
             // 
@@ -364,7 +359,6 @@
             this.MinimumSize = new System.Drawing.Size(900, 560);
             this.Name = "Form5";
             this.Text = "Form5";
-            this.Load += new System.EventHandler(this.Form5_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvInventoryCRUD)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

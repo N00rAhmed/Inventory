@@ -25,20 +25,16 @@ namespace Inventory
             this.Hide();
 
             string dbquery = "INSERT INTO User(FirstName, LastName, UserName, Password)" + "VALUES ('" + Firstnametxtbox.Text + "', '" + lastnametxtbox.Text + "', '" + Usernametxtbox.Text + "', '" + Passwordtxtbox.Text + "')";
-            string query = "INSERT INTO Login(UserName, Password, UserID) SELECT UserName, Password, UserID FROM User";
 
             AmendDatabase(dbquery);
-            AmendDatabase(query);
 
             Form2 f2 = new Form2();
             f2.Show();
-
-
         }
 
         private void AmendDatabase(string txtQuery)
         {
-            SQLiteConnection conn = new SQLiteConnection(@"data source = C:\Users\User\Desktop\KoolKaftan\Inventory\inventory.db");
+            SQLiteConnection conn = new SQLiteConnection(Inventory.DB.DBLocation);
             conn.Open();
 
             string query = txtQuery;
@@ -46,29 +42,11 @@ namespace Inventory
             cmd.ExecuteNonQuery();
 
             conn.Close();
+            // Reset fields
             Firstnametxtbox.Text = "";
             lastnametxtbox.Text = "";
             Usernametxtbox.Text = "";
             Passwordtxtbox.Text = "";
-
-
-        }
-
-
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Firstnametxtbox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form3_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

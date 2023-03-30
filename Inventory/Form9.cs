@@ -22,24 +22,9 @@ namespace Inventory
 
         }
 
-        private void Form9_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dgvStockLimit_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void txtBufferLimit_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void LoadData()
         {
-            SQLiteConnection conn = new SQLiteConnection(@"data source = C:\Users\User\Desktop\KoolKaftan\Inventory\inventory.db");
+            SQLiteConnection conn = new SQLiteConnection(Inventory.DB.DBLocation);
             conn.Open();
 
             string query = "SELECT * FROM Kaftan_Stock";
@@ -55,12 +40,11 @@ namespace Inventory
             CheckBuffer();
         }
 
-
         void CheckBuffer()
         {
             int rowCount = dgvStockLimit.Rows.Count;
             int bufferLimit = 0;
-            SQLiteConnection connection = new SQLiteConnection(@"data source = C:\Users\User\Desktop\KoolKaftan\Inventory\inventory.db");
+            SQLiteConnection connection = new SQLiteConnection(Inventory.DB.DBLocation);
             connection.Open();
             // Get Current BufferLimit from database
             using (SQLiteCommand cmd = new SQLiteCommand())
@@ -150,17 +134,12 @@ namespace Inventory
         private void btnSubmit_Click(object sender, EventArgs e)
         {
             string insertQuery = "UPDATE StockLimit SET \"Limit\" = " + txtBufferLimit.Text.ToString();
-            SQLiteConnection connection = new SQLiteConnection(@"data source = C:\Users\User\Desktop\KoolKaftan\Inventory\inventory.db");
+            SQLiteConnection connection = new SQLiteConnection(Inventory.DB.DBLocation);
             connection.Open();
             SQLiteCommand query = new SQLiteCommand(insertQuery, connection);
             query.ExecuteNonQuery();
             connection.Close();
             CheckBuffer();
-        }
-
-        private void Form9_Load_1(object sender, EventArgs e)
-        {
-
         }
     }
 }
