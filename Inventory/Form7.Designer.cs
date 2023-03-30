@@ -49,96 +49,151 @@
             // 
             // Mngfname
             // 
+            this.Mngfname.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Mngfname.Location = new System.Drawing.Point(384, 123);
+            this.Mngfname.MinimumSize = new System.Drawing.Size(124, 20);
             this.Mngfname.Name = "Mngfname";
             this.Mngfname.Size = new System.Drawing.Size(124, 20);
             this.Mngfname.TabIndex = 0;
             // 
             // mngLname
             // 
+            this.mngLname.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.mngLname.Location = new System.Drawing.Point(384, 149);
+            this.mngLname.MinimumSize = new System.Drawing.Size(124, 20);
             this.mngLname.Name = "mngLname";
             this.mngLname.Size = new System.Drawing.Size(124, 20);
             this.mngLname.TabIndex = 1;
             // 
             // mngEmail
             // 
+            this.mngEmail.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.mngEmail.Location = new System.Drawing.Point(384, 184);
+            this.mngEmail.MinimumSize = new System.Drawing.Size(124, 20);
             this.mngEmail.Name = "mngEmail";
             this.mngEmail.Size = new System.Drawing.Size(124, 20);
             this.mngEmail.TabIndex = 2;
             // 
             // Mngusername
             // 
+            this.Mngusername.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Mngusername.Location = new System.Drawing.Point(384, 215);
+            this.Mngusername.MinimumSize = new System.Drawing.Size(124, 20);
             this.Mngusername.Name = "Mngusername";
             this.Mngusername.Size = new System.Drawing.Size(124, 20);
             this.Mngusername.TabIndex = 3;
             // 
             // Mngpassword
             // 
+            this.Mngpassword.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Mngpassword.Location = new System.Drawing.Point(384, 247);
+            this.Mngpassword.MinimumSize = new System.Drawing.Size(124, 20);
             this.Mngpassword.Name = "Mngpassword";
             this.Mngpassword.Size = new System.Drawing.Size(124, 20);
             this.Mngpassword.TabIndex = 4;
             // 
             // F
             // 
+            this.F.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.F.AutoSize = true;
-            this.F.Location = new System.Drawing.Point(288, 126);
+            this.F.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.F.Location = new System.Drawing.Point(285, 123);
+            this.F.MinimumSize = new System.Drawing.Size(86, 20);
             this.F.Name = "F";
-            this.F.Size = new System.Drawing.Size(57, 13);
+            this.F.Size = new System.Drawing.Size(86, 20);
             this.F.TabIndex = 5;
             this.F.Text = "First Name";
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(288, 152);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(285, 149);
+            this.label1.MinimumSize = new System.Drawing.Size(86, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 13);
+            this.label1.Size = new System.Drawing.Size(86, 20);
             this.label1.TabIndex = 6;
             this.label1.Text = "Last Name";
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(288, 187);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(267, 184);
+            this.label2.MinimumSize = new System.Drawing.Size(111, 20);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 13);
+            this.label2.Size = new System.Drawing.Size(111, 20);
             this.label2.TabIndex = 7;
             this.label2.Text = "Email Address";
             // 
             // label3
             // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(288, 218);
+            this.label3.MinimumSize = new System.Drawing.Size(83, 20);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 13);
+            this.label3.Size = new System.Drawing.Size(83, 20);
             this.label3.TabIndex = 8;
             this.label3.Text = "Username";
             // 
             // label4
             // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(288, 250);
+            this.label4.MinimumSize = new System.Drawing.Size(78, 20);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 13);
+            this.label4.Size = new System.Drawing.Size(78, 20);
             this.label4.TabIndex = 9;
             this.label4.Text = "Password";
             // 
             // label5
             // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Transparent;
             this.label5.Location = new System.Drawing.Point(340, 18);
+            this.label5.MinimumSize = new System.Drawing.Size(183, 25);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(91, 13);
+            this.label5.Size = new System.Drawing.Size(183, 25);
             this.label5.TabIndex = 10;
             this.label5.Text = "Manager Register";
             // 
             // Registerbtn
             // 
+            this.Registerbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Registerbtn.Location = new System.Drawing.Point(384, 302);
+            this.Registerbtn.MinimumSize = new System.Drawing.Size(75, 28);
             this.Registerbtn.Name = "Registerbtn";
             this.Registerbtn.Size = new System.Drawing.Size(75, 28);
             this.Registerbtn.TabIndex = 11;
@@ -203,6 +258,7 @@
             this.Controls.Add(this.mngEmail);
             this.Controls.Add(this.mngLname);
             this.Controls.Add(this.Mngfname);
+            this.MinimumSize = new System.Drawing.Size(816, 489);
             this.Name = "Form7";
             this.Text = "Form7";
             this.Load += new System.EventHandler(this.Form7_Load);
