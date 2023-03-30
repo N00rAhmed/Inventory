@@ -40,28 +40,31 @@
             // Create_account
             // 
             this.Create_account.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Create_account.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Create_account.Location = new System.Drawing.Point(350, 123);
             this.Create_account.Name = "Create_account";
             this.Create_account.Size = new System.Drawing.Size(108, 42);
             this.Create_account.TabIndex = 0;
-            this.Create_account.Text = "create account";
+            this.Create_account.Text = "Create";
             this.Create_account.UseVisualStyleBackColor = true;
             this.Create_account.Click += new System.EventHandler(this.button1_Click);
             // 
             // Login
             // 
             this.Login.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Login.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Login.Location = new System.Drawing.Point(350, 198);
             this.Login.Name = "Login";
             this.Login.Size = new System.Drawing.Size(108, 42);
             this.Login.TabIndex = 1;
-            this.Login.Text = "login";
+            this.Login.Text = "Login";
             this.Login.UseVisualStyleBackColor = true;
             this.Login.Click += new System.EventHandler(this.Login_Click);
             // 
             // ManagerBtn
             // 
             this.ManagerBtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ManagerBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ManagerBtn.Location = new System.Drawing.Point(350, 281);
             this.ManagerBtn.Name = "ManagerBtn";
             this.ManagerBtn.Size = new System.Drawing.Size(108, 42);
