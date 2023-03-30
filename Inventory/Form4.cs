@@ -5,9 +5,11 @@ using System.Data;
 using System.Data.SQLite;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 
 namespace Inventory
 {
@@ -57,6 +59,11 @@ namespace Inventory
             Form1 f1 = new Form1();
             f1.Show();
 
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }

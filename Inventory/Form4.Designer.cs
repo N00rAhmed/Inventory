@@ -42,18 +42,22 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Lucida Sans", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(305, 74);
+            this.label1.Location = new System.Drawing.Point(303, 67);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(137, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "Inventory Manager";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // dgvInventoryViewer
             // 
+            this.dgvInventoryViewer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvInventoryViewer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvInventoryViewer.Location = new System.Drawing.Point(79, 103);
+            this.dgvInventoryViewer.Location = new System.Drawing.Point(3, 85);
             this.dgvInventoryViewer.Name = "dgvInventoryViewer";
-            this.dgvInventoryViewer.Size = new System.Drawing.Size(634, 301);
+            this.dgvInventoryViewer.Size = new System.Drawing.Size(785, 301);
             this.dgvInventoryViewer.TabIndex = 1;
             this.dgvInventoryViewer.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInventoryViewer_CellContentClick);
             // 
@@ -97,7 +101,8 @@
             // 
             // LogoutBTN1
             // 
-            this.LogoutBTN1.Location = new System.Drawing.Point(713, 12);
+            this.LogoutBTN1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.LogoutBTN1.Location = new System.Drawing.Point(707, 12);
             this.LogoutBTN1.Name = "LogoutBTN1";
             this.LogoutBTN1.Size = new System.Drawing.Size(75, 23);
             this.LogoutBTN1.TabIndex = 25;
@@ -110,13 +115,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 457);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.LogoutBTN1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dgvInventoryViewer);
-            this.Controls.Add(this.label1);
             this.MinimumSize = new System.Drawing.Size(816, 489);
             this.Name = "Form4";
             this.Text = "Form4";
