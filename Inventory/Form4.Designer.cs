@@ -59,7 +59,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(127)))), ((int)(((byte)(24)))));
             this.panel1.Location = new System.Drawing.Point(-894, 40);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(2588, 31);
@@ -67,7 +67,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(127)))), ((int)(((byte)(24)))));
             this.panel2.Location = new System.Drawing.Point(-894, 410);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(2588, 354);
@@ -109,7 +109,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 457);
             this.Controls.Add(this.LogoutBTN1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label8);
@@ -117,6 +117,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dgvInventoryViewer);
             this.Controls.Add(this.label1);
+            this.MinimumSize = new System.Drawing.Size(816, 489);
             this.Name = "Form4";
             this.Text = "Form4";
             this.Load += new System.EventHandler(this.Form4_Load);
