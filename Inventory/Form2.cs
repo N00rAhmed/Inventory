@@ -53,15 +53,16 @@ namespace Inventory
                     break;
                 }
 
-                if (login == false)
-                {
-                    string message = "Incorrect login details";
-                    MessageBox.Show(message);
-                    Form2 f2 = new Form2();
-                    f2.Show();
-                }
-
             }
+
+            if (login == false)
+            {
+                string message = "Incorrect login details";
+                MessageBox.Show(message);
+                Form2 f2 = new Form2();
+                f2.Show();
+            }
+
 
         }
 
