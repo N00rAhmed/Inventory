@@ -32,5 +32,10 @@ namespace Inventory
             f7.Show();
 
         }
+
+        private void Form8_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

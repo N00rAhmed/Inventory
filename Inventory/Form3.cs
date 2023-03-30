@@ -38,7 +38,7 @@ namespace Inventory
 
         private void AmendDatabase(string txtQuery)
         {
-            SQLiteConnection conn = new SQLiteConnection(@"data source = C:\Users\User\Desktop\KoolKaftan\Inventory\inventory.db");
+            SQLiteConnection conn = new SQLiteConnection(@"data source = C:\Users\Elias\source\repos\Cool Kftan 3.0\Inventory\inventory.db");
             conn.Open();
 
             string query = txtQuery;
@@ -67,6 +67,11 @@ namespace Inventory
         }
 
         private void Form3_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
