@@ -29,12 +29,14 @@ namespace Inventory
             cboCamera.SelectedIndex = 0;
         }
 
-        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        private void Form10_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (videoCaptureDevice != null)
             {
                 if (videoCaptureDevice.IsRunning)
+                {
                     videoCaptureDevice.Stop();
+                }
             }
         }
 
@@ -78,6 +80,6 @@ namespace Inventory
                     txtBarcode.Text = result.ToString();
                 }));
             }
-         }
+        }
     }
 }

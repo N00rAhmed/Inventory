@@ -58,7 +58,6 @@
             this.txtBufferLimit.Name = "txtBufferLimit";
             this.txtBufferLimit.Size = new System.Drawing.Size(175, 20);
             this.txtBufferLimit.TabIndex = 1;
-            this.txtBufferLimit.TextChanged += new System.EventHandler(this.txtBufferLimit_TextChanged);
             // 
             // dgvStockLimit
             // 
@@ -68,7 +67,6 @@
             this.dgvStockLimit.Name = "dgvStockLimit";
             this.dgvStockLimit.Size = new System.Drawing.Size(476, 234);
             this.dgvStockLimit.TabIndex = 2;
-            this.dgvStockLimit.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvStockLimit_CellContentClick);
             // 
             // panel2
             // 
@@ -124,7 +122,6 @@
             this.Controls.Add(this.btnSubmit);
             this.Name = "Form9";
             this.Text = "Form9";
-            this.Load += new System.EventHandler(this.Form9_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.dgvStockLimit)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

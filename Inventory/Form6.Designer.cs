@@ -49,7 +49,7 @@
             this.Manageremail.Location = new System.Drawing.Point(334, 173);
             this.Manageremail.MinimumSize = new System.Drawing.Size(122, 20);
             this.Manageremail.Name = "Manageremail";
-            this.Manageremail.Size = new System.Drawing.Size(122, 20);
+            this.Manageremail.Size = new System.Drawing.Size(126, 20);
             this.Manageremail.TabIndex = 0;
             // 
             // label1
@@ -74,7 +74,7 @@
             this.Managerpassword.Location = new System.Drawing.Point(334, 208);
             this.Managerpassword.MinimumSize = new System.Drawing.Size(122, 20);
             this.Managerpassword.Name = "Managerpassword";
-            this.Managerpassword.Size = new System.Drawing.Size(122, 20);
+            this.Managerpassword.Size = new System.Drawing.Size(126, 20);
             this.Managerpassword.TabIndex = 2;
             // 
             // label2
@@ -93,13 +93,12 @@
             // 
             // loginbtn
             // 
-            this.loginbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.loginbtn.Location = new System.Drawing.Point(349, 277);
+            this.loginbtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.loginbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginbtn.Location = new System.Drawing.Point(346, 278);
             this.loginbtn.MinimumSize = new System.Drawing.Size(75, 23);
             this.loginbtn.Name = "loginbtn";
-            this.loginbtn.Size = new System.Drawing.Size(75, 23);
+            this.loginbtn.Size = new System.Drawing.Size(79, 29);
             this.loginbtn.TabIndex = 4;
             this.loginbtn.Text = "Login";
             this.loginbtn.UseVisualStyleBackColor = true;
@@ -122,46 +121,50 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(127)))), ((int)(((byte)(24)))));
             this.panel1.Controls.Add(this.label3);
             this.panel1.Location = new System.Drawing.Point(2, 39);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(797, 53);
+            this.panel1.Size = new System.Drawing.Size(801, 53);
             this.panel1.TabIndex = 6;
             // 
             // Titletxtbox
             // 
-            this.Titletxtbox.Font = new System.Drawing.Font("Harlow Solid Italic", 20.25F, System.Drawing.FontStyle.Italic);
+            this.Titletxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Italic);
             this.Titletxtbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.Titletxtbox.Location = new System.Drawing.Point(2, 0);
             this.Titletxtbox.Name = "Titletxtbox";
-            this.Titletxtbox.Size = new System.Drawing.Size(76, 42);
+            this.Titletxtbox.Size = new System.Drawing.Size(76, 38);
             this.Titletxtbox.TabIndex = 10;
             this.Titletxtbox.Text = "Cool";
             // 
             // textBox1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Harlow Solid Italic", 20.25F, System.Drawing.FontStyle.Italic);
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Italic);
             this.textBox1.ForeColor = System.Drawing.Color.DarkOliveGreen;
             this.textBox1.Location = new System.Drawing.Point(71, 0);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(96, 42);
+            this.textBox1.Size = new System.Drawing.Size(96, 38);
             this.textBox1.TabIndex = 11;
             this.textBox1.Text = "Kaftan";
             // 
             // panel2
             // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(127)))), ((int)(((byte)(24)))));
-            this.panel2.Location = new System.Drawing.Point(2, 385);
+            this.panel2.Location = new System.Drawing.Point(2, 386);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(797, 65);
+            this.panel2.Size = new System.Drawing.Size(801, 65);
             this.panel2.TabIndex = 12;
             // 
             // Form6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(734, 450);
+            this.ClientSize = new System.Drawing.Size(804, 451);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.Titletxtbox);
@@ -171,10 +174,9 @@
             this.Controls.Add(this.Managerpassword);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Manageremail);
-            this.MinimumSize = new System.Drawing.Size(816, 289);
+            this.MinimumSize = new System.Drawing.Size(820, 490);
             this.Name = "Form6";
             this.Text = "Form6";
-            this.Load += new System.EventHandler(this.Form6_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

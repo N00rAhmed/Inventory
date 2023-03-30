@@ -50,7 +50,6 @@
             this.label1.Size = new System.Drawing.Size(48, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "Login";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // loginBtn
             // 
@@ -77,7 +76,6 @@
             this.label2.Size = new System.Drawing.Size(80, 23);
             this.label2.TabIndex = 2;
             this.label2.Text = "Username";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // userNametxt
             // 
@@ -90,7 +88,6 @@
             this.userNametxt.Name = "userNametxt";
             this.userNametxt.Size = new System.Drawing.Size(188, 26);
             this.userNametxt.TabIndex = 3;
-            this.userNametxt.TextChanged += new System.EventHandler(this.userNametxt_TextChanged);
             // 
             // label3
             // 
@@ -101,7 +98,6 @@
             this.label3.Size = new System.Drawing.Size(76, 23);
             this.label3.TabIndex = 4;
             this.label3.Text = "Password";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // Passwordtxt
             // 
@@ -115,7 +111,6 @@
             this.Passwordtxt.PasswordChar = '*';
             this.Passwordtxt.Size = new System.Drawing.Size(188, 26);
             this.Passwordtxt.TabIndex = 5;
-            this.Passwordtxt.TextChanged += new System.EventHandler(this.Passwordtxt_TextChanged);
             // 
             // panel1
             // 
@@ -179,7 +174,6 @@
             this.MinimumSize = new System.Drawing.Size(816, 489);
             this.Name = "Form2";
             this.Text = "Form2";
-            this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

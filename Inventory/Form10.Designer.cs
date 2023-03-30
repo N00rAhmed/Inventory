@@ -151,6 +151,7 @@
             this.MinimumSize = new System.Drawing.Size(816, 542);
             this.Name = "Form10";
             this.Text = "Form10";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form10_FormClosing);
             this.Load += new System.EventHandler(this.Form10_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.panel1.ResumeLayout(false);

@@ -38,9 +38,10 @@
             // 
             // MLogin
             // 
-            this.MLogin.Location = new System.Drawing.Point(352, 131);
+            this.MLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MLogin.Location = new System.Drawing.Point(352, 136);
             this.MLogin.Name = "MLogin";
-            this.MLogin.Size = new System.Drawing.Size(97, 39);
+            this.MLogin.Size = new System.Drawing.Size(131, 44);
             this.MLogin.TabIndex = 1;
             this.MLogin.Text = "manager login";
             this.MLogin.UseVisualStyleBackColor = true;
@@ -48,9 +49,10 @@
             // 
             // MRegister
             // 
-            this.MRegister.Location = new System.Drawing.Point(352, 199);
+            this.MRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MRegister.Location = new System.Drawing.Point(352, 206);
             this.MRegister.Name = "MRegister";
-            this.MRegister.Size = new System.Drawing.Size(97, 39);
+            this.MRegister.Size = new System.Drawing.Size(131, 44);
             this.MRegister.TabIndex = 2;
             this.MRegister.Text = "create account";
             this.MRegister.UseVisualStyleBackColor = true;
@@ -74,21 +76,21 @@
             // 
             // Titletxtbox
             // 
-            this.Titletxtbox.Font = new System.Drawing.Font("Harlow Solid Italic", 20.25F, System.Drawing.FontStyle.Italic);
+            this.Titletxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Italic);
             this.Titletxtbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.Titletxtbox.Location = new System.Drawing.Point(0, -2);
             this.Titletxtbox.Name = "Titletxtbox";
-            this.Titletxtbox.Size = new System.Drawing.Size(76, 42);
+            this.Titletxtbox.Size = new System.Drawing.Size(76, 38);
             this.Titletxtbox.TabIndex = 11;
             this.Titletxtbox.Text = "Cool";
             // 
             // textBox1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Harlow Solid Italic", 20.25F, System.Drawing.FontStyle.Italic);
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Italic);
             this.textBox1.ForeColor = System.Drawing.Color.DarkOliveGreen;
             this.textBox1.Location = new System.Drawing.Point(73, -2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(96, 42);
+            this.textBox1.Size = new System.Drawing.Size(96, 38);
             this.textBox1.TabIndex = 12;
             this.textBox1.Text = "Kaftan";
             // 

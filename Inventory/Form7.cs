@@ -20,27 +20,21 @@ namespace Inventory
             InitializeComponent();
         }
 
-        private void Form7_Load(object sender, EventArgs e)
+        private void AmendDatabase(string dbQuery)
         {
-
-        }
-        private void AmendDatabase(string txtQuery)
-        {
-            SQLiteConnection conn = new SQLiteConnection(@"data source = C:\Users\User\Desktop\KoolKaftan\Inventory\inventory.db");
+            SQLiteConnection conn = new SQLiteConnection(DB.DBLocation);
             conn.Open();
 
-            string query = txtQuery;
-            SQLiteCommand cmd = new SQLiteCommand(query, conn);
+            SQLiteCommand cmd = new SQLiteCommand(dbQuery, conn);
             cmd.ExecuteNonQuery();
 
             conn.Close();
+            // Reset text fields
             Mngfname.Text = "";
             mngLname.Text = "";
             mngEmail.Text = "";
             Mngusername.Text = "";
             Mngpassword.Text = "";
-
-
         }
 
         private void Registerbtn_Click(object sender, EventArgs e)
@@ -48,14 +42,11 @@ namespace Inventory
             this.Hide();
 
             string dbquery = "INSERT INTO UserAdmin(Name, LastName, UserName, Password, Email)" + "VALUES ('" + Mngfname.Text + "', '" + mngLname.Text + "', '" + Mngusername.Text + "', '" + Mngpassword.Text + "', '" + mngEmail.Text + "')";
-            string query = "INSERT INTO LoginAdmin(Email, Password, UserAdminID) SELECT Email, Password, UserAdminID FROM UserAdmin";
 
             AmendDatabase(dbquery);
-            AmendDatabase(query);
 
             Form6 f6 = new Form6();
             f6.Show();
-
         }
     }
 }

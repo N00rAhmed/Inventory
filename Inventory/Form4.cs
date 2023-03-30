@@ -22,7 +22,7 @@ namespace Inventory
         }
         private void LoadData()
         {
-            SQLiteConnection conn = new SQLiteConnection(@"data source = C:\Users\User\Desktop\KoolKaftan\Inventory\inventory.db");
+            SQLiteConnection conn = new SQLiteConnection(DB.DBLocation);
             conn.Open();
 
             string query = "SELECT * FROM Kaftan_Stock";
@@ -34,23 +34,7 @@ namespace Inventory
 
             dgvInventoryViewer.DataSource = dt;
             //dgvTasks.Columns[3].Visible = false;
-
-
-
-
-
             conn.Close();
-
-        }
-
-        private void dgvInventoryViewer_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void Form4_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void LogoutBTN1_Click(object sender, EventArgs e)
@@ -58,16 +42,6 @@ namespace Inventory
             this.Hide();
             Form1 f1 = new Form1();
             f1.Show();
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
 
         }
     }
