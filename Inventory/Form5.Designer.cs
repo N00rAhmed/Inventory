@@ -253,21 +253,23 @@
             // 
             // Titletxtbox
             // 
+            this.Titletxtbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Titletxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Italic);
             this.Titletxtbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.Titletxtbox.Location = new System.Drawing.Point(3, 0);
             this.Titletxtbox.Name = "Titletxtbox";
-            this.Titletxtbox.Size = new System.Drawing.Size(76, 38);
+            this.Titletxtbox.Size = new System.Drawing.Size(76, 31);
             this.Titletxtbox.TabIndex = 18;
             this.Titletxtbox.Text = "Cool";
             // 
             // textBox1
             // 
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Italic);
             this.textBox1.ForeColor = System.Drawing.Color.DarkOliveGreen;
             this.textBox1.Location = new System.Drawing.Point(74, 0);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(96, 38);
+            this.textBox1.Size = new System.Drawing.Size(96, 31);
             this.textBox1.TabIndex = 19;
             this.textBox1.Text = "Kaftan";
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
