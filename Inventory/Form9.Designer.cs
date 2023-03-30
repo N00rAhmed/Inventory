@@ -33,8 +33,8 @@
             this.dgvStockLimit = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.Titletxtbox = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Titletxtbox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStockLimit)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -84,16 +84,6 @@
             this.panel1.Size = new System.Drawing.Size(797, 70);
             this.panel1.TabIndex = 10;
             // 
-            // Titletxtbox
-            // 
-            this.Titletxtbox.Font = new System.Drawing.Font("Harlow Solid Italic", 20.25F, System.Drawing.FontStyle.Italic);
-            this.Titletxtbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.Titletxtbox.Location = new System.Drawing.Point(0, 8);
-            this.Titletxtbox.Name = "Titletxtbox";
-            this.Titletxtbox.Size = new System.Drawing.Size(76, 42);
-            this.Titletxtbox.TabIndex = 11;
-            this.Titletxtbox.Text = "Cool";
-            // 
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Harlow Solid Italic", 20.25F, System.Drawing.FontStyle.Italic);
@@ -104,11 +94,21 @@
             this.textBox1.TabIndex = 12;
             this.textBox1.Text = "Kaftan";
             // 
+            // Titletxtbox
+            // 
+            this.Titletxtbox.Font = new System.Drawing.Font("Harlow Solid Italic", 20.25F, System.Drawing.FontStyle.Italic);
+            this.Titletxtbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.Titletxtbox.Location = new System.Drawing.Point(0, 8);
+            this.Titletxtbox.Name = "Titletxtbox";
+            this.Titletxtbox.Size = new System.Drawing.Size(76, 42);
+            this.Titletxtbox.TabIndex = 11;
+            this.Titletxtbox.Text = "Cool";
+            // 
             // Form9
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(772, 450);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.dgvStockLimit);
