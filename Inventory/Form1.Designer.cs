@@ -39,7 +39,8 @@
             // 
             // Create_account
             // 
-            this.Create_account.Location = new System.Drawing.Point(324, 123);
+            this.Create_account.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Create_account.Location = new System.Drawing.Point(350, 123);
             this.Create_account.Name = "Create_account";
             this.Create_account.Size = new System.Drawing.Size(108, 42);
             this.Create_account.TabIndex = 0;
@@ -49,7 +50,8 @@
             // 
             // Login
             // 
-            this.Login.Location = new System.Drawing.Point(324, 198);
+            this.Login.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Login.Location = new System.Drawing.Point(350, 198);
             this.Login.Name = "Login";
             this.Login.Size = new System.Drawing.Size(108, 42);
             this.Login.TabIndex = 1;
@@ -59,7 +61,8 @@
             // 
             // ManagerBtn
             // 
-            this.ManagerBtn.Location = new System.Drawing.Point(324, 281);
+            this.ManagerBtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ManagerBtn.Location = new System.Drawing.Point(350, 281);
             this.ManagerBtn.Name = "ManagerBtn";
             this.ManagerBtn.Size = new System.Drawing.Size(108, 42);
             this.ManagerBtn.TabIndex = 2;
@@ -69,37 +72,41 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(127)))), ((int)(((byte)(24)))));
             this.panel1.Location = new System.Drawing.Point(0, 37);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(797, 53);
+            this.panel1.Size = new System.Drawing.Size(801, 53);
             this.panel1.TabIndex = 4;
             // 
             // panel2
             // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(127)))), ((int)(((byte)(24)))));
-            this.panel2.Location = new System.Drawing.Point(0, 378);
+            this.panel2.Location = new System.Drawing.Point(0, 379);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(797, 74);
+            this.panel2.Size = new System.Drawing.Size(801, 74);
             this.panel2.TabIndex = 8;
             // 
             // Titletxtbox
             // 
-            this.Titletxtbox.Font = new System.Drawing.Font("Harlow Solid Italic", 20.25F, System.Drawing.FontStyle.Italic);
+            this.Titletxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Italic);
             this.Titletxtbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.Titletxtbox.Location = new System.Drawing.Point(0, -3);
             this.Titletxtbox.Name = "Titletxtbox";
-            this.Titletxtbox.Size = new System.Drawing.Size(76, 42);
+            this.Titletxtbox.Size = new System.Drawing.Size(76, 38);
             this.Titletxtbox.TabIndex = 9;
             this.Titletxtbox.Text = "Cool";
             // 
             // textBox1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Harlow Solid Italic", 20.25F, System.Drawing.FontStyle.Italic);
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Italic);
             this.textBox1.ForeColor = System.Drawing.Color.DarkOliveGreen;
             this.textBox1.Location = new System.Drawing.Point(67, -3);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(96, 42);
+            this.textBox1.Size = new System.Drawing.Size(96, 38);
             this.textBox1.TabIndex = 10;
             this.textBox1.Text = "Kaftan";
             // 
@@ -107,7 +114,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(804, 451);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.Titletxtbox);
             this.Controls.Add(this.panel2);
@@ -115,6 +122,7 @@
             this.Controls.Add(this.ManagerBtn);
             this.Controls.Add(this.Login);
             this.Controls.Add(this.Create_account);
+            this.MinimumSize = new System.Drawing.Size(200, 470);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
