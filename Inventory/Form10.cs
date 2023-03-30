@@ -38,17 +38,39 @@ namespace Inventory
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnActivate_Click(object sender, EventArgs e)
         {
-            videoCaptureDevice = new VideoCaptureDevice(filterInfoCollection[cboCamera.SelectedIndex].MonikerString);
-            videoCaptureDevice.NewFrame += VideoCaptureDevice_NewFrame;
-            videoCaptureDevice.Start();
+            if (videoCaptureDevice == null)
+            { 
+                videoCaptureDevice = new VideoCaptureDevice(filterInfoCollection[cboCamera.SelectedIndex].MonikerString);
+                videoCaptureDevice.NewFrame += VideoCaptureDevice_NewFrame;
+                videoCaptureDevice.Start();
+            }
+            else
+            {
+                videoCaptureDevice.Stop();
+                videoCaptureDevice = new VideoCaptureDevice(filterInfoCollection[cboCamera.SelectedIndex].MonikerString);
+                videoCaptureDevice.NewFrame += VideoCaptureDevice_NewFrame;
+                videoCaptureDevice.Start();
+            }
         }
         private void VideoCaptureDevice_NewFrame(object sender, AForge.Video.NewFrameEventArgs eventArgs)
         {
             Bitmap bitmap = (Bitmap)eventArgs.Frame.Clone();
+            Bitmap bitmapDecode = (Bitmap)eventArgs.Frame.Clone();
             BarcodeReader reader = new BarcodeReader();
-            var result = reader.Decode(bitmap);
+            if (bitmap != null && pictureBox != null)
+            {
+                try
+                {
+                    pictureBox.BeginInvoke(new Action(() => pictureBox.Image = bitmap));
+                }
+                catch
+                {
+                    return;
+                }
+            }
+            var result = reader.Decode(bitmapDecode);
             if (result != null)
             {
                 txtBarcode.Invoke(new MethodInvoker(delegate ()
@@ -56,7 +78,6 @@ namespace Inventory
                     txtBarcode.Text = result.ToString();
                 }));
             }
-            pictureBox.Image = bitmap;
-        }
+         }
     }
 }
