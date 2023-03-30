@@ -22,7 +22,7 @@ namespace Inventory
         {
             InitializeComponent();
 
-            SQLiteConnection conn = new SQLiteConnection(@"data source =  C:\Users\abdir\OneDrive\Documents\inventory\Inventory\inventory.db");
+            SQLiteConnection conn = new SQLiteConnection(@"data source =  C:\Users\User\Desktop\KoolKaftan\Inventory\inventory.db");
             conn.Open();
 
             string query = "SELECT UserName, Password, UserID from Login";
