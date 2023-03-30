@@ -96,13 +96,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(808, 457);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.Titletxtbox);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.MRegister);
             this.Controls.Add(this.MLogin);
+            this.MinimumSize = new System.Drawing.Size(816, 496);
             this.Name = "Form8";
             this.Text = "Form8";
             this.Load += new System.EventHandler(this.Form8_Load);

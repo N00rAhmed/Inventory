@@ -41,6 +41,7 @@
             // 
             // btnSubmit
             // 
+            this.btnSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubmit.Location = new System.Drawing.Point(387, 324);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(104, 42);
@@ -51,6 +52,8 @@
             // 
             // txtBufferLimit
             // 
+            this.txtBufferLimit.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtBufferLimit.Location = new System.Drawing.Point(189, 336);
             this.txtBufferLimit.Name = "txtBufferLimit";
             this.txtBufferLimit.Size = new System.Drawing.Size(175, 20);
@@ -59,6 +62,7 @@
             // 
             // dgvStockLimit
             // 
+            this.dgvStockLimit.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dgvStockLimit.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvStockLimit.Location = new System.Drawing.Point(121, 84);
             this.dgvStockLimit.Name = "dgvStockLimit";
@@ -68,6 +72,8 @@
             // 
             // panel2
             // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(127)))), ((int)(((byte)(24)))));
             this.panel2.Location = new System.Drawing.Point(0, 382);
             this.panel2.Name = "panel2";
@@ -76,6 +82,8 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(127)))), ((int)(((byte)(24)))));
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.Titletxtbox);
@@ -86,21 +94,21 @@
             // 
             // textBox1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Harlow Solid Italic", 20.25F, System.Drawing.FontStyle.Italic);
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Italic);
             this.textBox1.ForeColor = System.Drawing.Color.DarkOliveGreen;
             this.textBox1.Location = new System.Drawing.Point(67, 8);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(96, 42);
+            this.textBox1.Size = new System.Drawing.Size(96, 38);
             this.textBox1.TabIndex = 12;
             this.textBox1.Text = "Kaftan";
             // 
             // Titletxtbox
             // 
-            this.Titletxtbox.Font = new System.Drawing.Font("Harlow Solid Italic", 20.25F, System.Drawing.FontStyle.Italic);
+            this.Titletxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Italic);
             this.Titletxtbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.Titletxtbox.Location = new System.Drawing.Point(0, 8);
             this.Titletxtbox.Name = "Titletxtbox";
-            this.Titletxtbox.Size = new System.Drawing.Size(76, 42);
+            this.Titletxtbox.Size = new System.Drawing.Size(76, 38);
             this.Titletxtbox.TabIndex = 11;
             this.Titletxtbox.Text = "Cool";
             // 
@@ -108,7 +116,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(772, 450);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.dgvStockLimit);
