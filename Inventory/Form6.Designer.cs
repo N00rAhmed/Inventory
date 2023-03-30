@@ -43,39 +43,61 @@
             // 
             // Manageremail
             // 
+            this.Manageremail.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Manageremail.Location = new System.Drawing.Point(334, 173);
+            this.Manageremail.MinimumSize = new System.Drawing.Size(122, 20);
             this.Manageremail.Name = "Manageremail";
             this.Manageremail.Size = new System.Drawing.Size(122, 20);
             this.Manageremail.TabIndex = 0;
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(255, 176);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(217, 173);
+            this.label1.MinimumSize = new System.Drawing.Size(111, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 13);
+            this.label1.Size = new System.Drawing.Size(111, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "Email Address";
             // 
             // Managerpassword
             // 
+            this.Managerpassword.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Managerpassword.Location = new System.Drawing.Point(334, 208);
+            this.Managerpassword.MinimumSize = new System.Drawing.Size(122, 20);
             this.Managerpassword.Name = "Managerpassword";
             this.Managerpassword.Size = new System.Drawing.Size(122, 20);
             this.Managerpassword.TabIndex = 2;
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(266, 211);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(217, 208);
+            this.label2.MinimumSize = new System.Drawing.Size(78, 20);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 13);
+            this.label2.Size = new System.Drawing.Size(78, 20);
             this.label2.TabIndex = 3;
             this.label2.Text = "Password";
             // 
             // loginbtn
             // 
+            this.loginbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.loginbtn.Location = new System.Drawing.Point(349, 277);
+            this.loginbtn.MinimumSize = new System.Drawing.Size(75, 23);
             this.loginbtn.Name = "loginbtn";
             this.loginbtn.Size = new System.Drawing.Size(75, 23);
             this.loginbtn.TabIndex = 4;
@@ -85,10 +107,16 @@
             // 
             // label3
             // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(358, 19);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Transparent;
+            this.label3.Location = new System.Drawing.Point(327, 15);
+            this.label3.MinimumSize = new System.Drawing.Size(74, 13);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(74, 13);
+            this.label3.Size = new System.Drawing.Size(149, 25);
             this.label3.TabIndex = 5;
             this.label3.Text = "Manager login";
             // 
@@ -143,6 +171,7 @@
             this.Controls.Add(this.Managerpassword);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Manageremail);
+            this.MinimumSize = new System.Drawing.Size(816, 289);
             this.Name = "Form6";
             this.Text = "Form6";
             this.Load += new System.EventHandler(this.Form6_Load);
