@@ -22,7 +22,7 @@ namespace Inventory
         {
             InitializeComponent();
 
-            SQLiteConnection conn = new SQLiteConnection(@"data source = C:\Users\User\Desktop\KoolKaftan\Inventory\inventory.db");
+            SQLiteConnection conn = new SQLiteConnection(@"data source = C:\Users\Elias\source\repos\Cool Kftan 3.0\Inventory\inventory.db");
             conn.Open();
 
             string query = "SELECT UserName, Password, UserID from Login";
@@ -47,22 +47,20 @@ namespace Inventory
                 {
                     uid = dr["UserID"].ToString();
 
+                    this.Close();
                     Form4 f4 = new Form4();
                     f4.Show();
                     login = true;
                     break;
                 }
-
-                if (login == false)
-                {
-                    string message = "Incorrect login details";
-                    MessageBox.Show(message);
-                    Form2 f2 = new Form2();
-                    f2.Show();
-                }
-
             }
-
+            if (login == false)
+            {
+                string message = "Incorrect login details";
+                MessageBox.Show(message);
+                Form2 f2 = new Form2();
+                f2.Show();
+            }
         }
 
         private void label2_Click(object sender, EventArgs e)

@@ -35,8 +35,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.Titletxtbox = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Titletxtbox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -101,6 +101,16 @@
             this.panel1.Size = new System.Drawing.Size(797, 62);
             this.panel1.TabIndex = 10;
             // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Harlow Solid Italic", 20.25F, System.Drawing.FontStyle.Italic);
+            this.textBox1.ForeColor = System.Drawing.Color.DarkOliveGreen;
+            this.textBox1.Location = new System.Drawing.Point(72, 3);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(96, 42);
+            this.textBox1.TabIndex = 11;
+            this.textBox1.Text = "Kaftan";
+            // 
             // Titletxtbox
             // 
             this.Titletxtbox.Font = new System.Drawing.Font("Harlow Solid Italic", 20.25F, System.Drawing.FontStyle.Italic);
@@ -110,16 +120,6 @@
             this.Titletxtbox.Size = new System.Drawing.Size(76, 42);
             this.Titletxtbox.TabIndex = 10;
             this.Titletxtbox.Text = "Cool";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Harlow Solid Italic", 20.25F, System.Drawing.FontStyle.Italic);
-            this.textBox1.ForeColor = System.Drawing.Color.DarkOliveGreen;
-            this.textBox1.Location = new System.Drawing.Point(76, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(96, 42);
-            this.textBox1.TabIndex = 11;
-            this.textBox1.Text = "Kaftan";
             // 
             // Form10
             // 
