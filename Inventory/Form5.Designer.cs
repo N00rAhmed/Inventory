@@ -76,7 +76,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvInventoryCRUD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvInventoryCRUD.Location = new System.Drawing.Point(3, 85);
+            this.dgvInventoryCRUD.Location = new System.Drawing.Point(3, 90);
             this.dgvInventoryCRUD.Name = "dgvInventoryCRUD";
             this.dgvInventoryCRUD.Size = new System.Drawing.Size(881, 276);
             this.dgvInventoryCRUD.TabIndex = 1;
