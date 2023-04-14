@@ -9,6 +9,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.Entity.Infrastructure;
+using System.Data.SQLite;
 
 namespace Inventory
 {
@@ -79,6 +81,19 @@ namespace Inventory
                 {
                     txtBarcode.Text = result.ToString();
                 }));
+            }
+        }
+
+        private void btnScan_Click(object sender, EventArgs e)
+        {
+            if (txtBarcode.Text != "" || txtBarcode != null)
+            {
+                SQLiteConnection conn = new SQLiteConnection(DB.DBLocation);
+                conn.Open();
+                string dbQuery = "INSERT INTO ScannedBarcodes(BarcodeID, DateTime)" + "VALUES ('" + txtBarcode.Text + "', '" + DateTimeOffset.UtcNow.ToUnixTimeMilliseconds() + "')";
+                SQLiteCommand cmd = new SQLiteCommand(dbQuery, conn);
+                cmd.ExecuteNonQuery();
+                conn.Close();
             }
         }
     }

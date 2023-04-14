@@ -52,7 +52,9 @@
             this.ScannerBtn = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.LogoutBTN1 = new System.Windows.Forms.Button();
+            this.btnLogout = new System.Windows.Forms.Button();
+            this.btnCheckStockPerformance = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInventoryCRUD)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -74,6 +76,7 @@
             this.dgvInventoryCRUD.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvInventoryCRUD.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dgvInventoryCRUD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvInventoryCRUD.Location = new System.Drawing.Point(3, 90);
             this.dgvInventoryCRUD.Name = "dgvInventoryCRUD";
@@ -285,7 +288,7 @@
             // 
             this.ScannerBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.ScannerBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ScannerBtn.Location = new System.Drawing.Point(676, 445);
+            this.ScannerBtn.Location = new System.Drawing.Point(676, 433);
             this.ScannerBtn.Name = "ScannerBtn";
             this.ScannerBtn.Size = new System.Drawing.Size(98, 34);
             this.ScannerBtn.TabIndex = 21;
@@ -309,30 +312,55 @@
             this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(560, 452);
+            this.label9.Location = new System.Drawing.Point(560, 440);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(110, 20);
             this.label9.TabIndex = 23;
             this.label9.Text = "Scan Barcode";
             // 
-            // LogoutBTN1
+            // btnLogout
             // 
-            this.LogoutBTN1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.LogoutBTN1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LogoutBTN1.Location = new System.Drawing.Point(788, 8);
-            this.LogoutBTN1.Name = "LogoutBTN1";
-            this.LogoutBTN1.Size = new System.Drawing.Size(84, 30);
-            this.LogoutBTN1.TabIndex = 24;
-            this.LogoutBTN1.Text = "Logout";
-            this.LogoutBTN1.UseVisualStyleBackColor = true;
-            this.LogoutBTN1.Click += new System.EventHandler(this.button1_Click);
+            this.btnLogout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.Location = new System.Drawing.Point(788, 8);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(84, 30);
+            this.btnLogout.TabIndex = 24;
+            this.btnLogout.Text = "Logout";
+            this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
+            // btnCheckStockPerformance
+            // 
+            this.btnCheckStockPerformance.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCheckStockPerformance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheckStockPerformance.Location = new System.Drawing.Point(676, 473);
+            this.btnCheckStockPerformance.Name = "btnCheckStockPerformance";
+            this.btnCheckStockPerformance.Size = new System.Drawing.Size(98, 34);
+            this.btnCheckStockPerformance.TabIndex = 25;
+            this.btnCheckStockPerformance.Text = "Check";
+            this.btnCheckStockPerformance.UseVisualStyleBackColor = true;
+            this.btnCheckStockPerformance.Click += new System.EventHandler(this.btnCheckStockPerformance_Click);
+            // 
+            // label10
+            // 
+            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(525, 478);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(145, 20);
+            this.label10.TabIndex = 26;
+            this.label10.Text = "Stock Performance";
             // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(884, 521);
-            this.Controls.Add(this.LogoutBTN1);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.btnCheckStockPerformance);
+            this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.ScannerBtn);
@@ -393,6 +421,8 @@
         private System.Windows.Forms.Button ScannerBtn;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button LogoutBTN1;
+        private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.Button btnCheckStockPerformance;
+        private System.Windows.Forms.Label label10;
     }
 }
