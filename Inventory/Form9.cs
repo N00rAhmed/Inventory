@@ -37,7 +37,31 @@ namespace Inventory
 
             dgvStockLimit.DataSource = dt;
             conn.Close();
-            //CheckBuffer();
+            GetScanLimit();
+            CheckBuffer();
+        }
+
+        void GetScanLimit()
+        {
+            int scanLimit;
+            SQLiteConnection connection = new SQLiteConnection(DB.DBLocation);
+            connection.Open();
+            // Get Current BufferLimit from database
+            using (SQLiteCommand cmd = new SQLiteCommand())
+            {
+                cmd.Connection = connection;
+                cmd.CommandType = System.Data.CommandType.Text;
+                cmd.CommandText = "SELECT ScanLimit FROM StockLimit";
+
+                // execute query and get data reader
+                using (SQLiteDataReader reader = cmd.ExecuteReader())
+                {
+                    reader.Read();
+                    scanLimit = reader.GetInt32(0);
+                }
+                connection.Close();
+            }
+            txtScanLimit.Text = scanLimit.ToString();
         }
 
         void CheckBuffer()
@@ -51,7 +75,7 @@ namespace Inventory
             {
                 cmd.Connection = connection;
                 cmd.CommandType = System.Data.CommandType.Text;
-                cmd.CommandText = "SELECT * FROM StockLimit";
+                cmd.CommandText = "SELECT BufferLimit FROM StockLimit";
 
                 // execute query and get data reader
                 using (SQLiteDataReader reader = cmd.ExecuteReader())
@@ -82,13 +106,13 @@ namespace Inventory
                     if (bufferValue < bufferLimit)
                     {
                         //label1.Text = dgvStockLimit.Rows[row].Cells["Buffer"].Value.ToString();
-                        SendEmail(itemCell.Value.ToString(),detailCell.Value.ToString(), bufferCell.Value.ToString());
+                        //SendEmail(itemCell.Value.ToString(),detailCell.Value.ToString(), bufferCell.Value.ToString());
                     }
                 }
             }
         }
 
-        void SendEmail(string name, string detail, string value)
+        private void SendEmail(string name, string detail, string value)
         {
             string fromEmail = "testing2398462394623@outlook.com";
             string toEmail = "Tronn232003@gmail.com"; // Replace with the user's email address
@@ -131,11 +155,14 @@ namespace Inventory
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            string insertQuery = "UPDATE StockLimit SET \"Limit\" = " + txtBufferLimit.Text.ToString();
+            string insertQuery = "UPDATE StockLimit SET \"BufferLimit\" = " + txtBufferLimit.Text;
+            string insertQuery2 = "UPDATE StockLimit SET \"ScanLimit\" = " + txtScanLimit.Text;
             SQLiteConnection connection = new SQLiteConnection(DB.DBLocation);
             connection.Open();
             SQLiteCommand query = new SQLiteCommand(insertQuery, connection);
+            SQLiteCommand query2 = new SQLiteCommand(insertQuery2, connection);
             query.ExecuteNonQuery();
+            query2.ExecuteNonQuery();
             connection.Close();
             CheckBuffer();
         }
