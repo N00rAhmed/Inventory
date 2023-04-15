@@ -63,5 +63,10 @@ namespace Inventory
             }
             MessageBox.Show("Incorrect login details");
         }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

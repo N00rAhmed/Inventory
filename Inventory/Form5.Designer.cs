@@ -79,6 +79,7 @@
             this.dgvInventoryCRUD.Name = "dgvInventoryCRUD";
             this.dgvInventoryCRUD.Size = new System.Drawing.Size(881, 276);
             this.dgvInventoryCRUD.TabIndex = 1;
+            this.dgvInventoryCRUD.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInventoryCRUD_CellContentClick);
             // 
             // Category
             // 

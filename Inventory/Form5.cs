@@ -12,8 +12,6 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.Data.SqlClient;
 
 
-
-
 /*System.Data.SQLite.SQLiteException: 'database is locked
 database is locked'
 */
@@ -111,6 +109,11 @@ namespace Inventory
             this.Hide();
             Form1 f1 = new Form1();
             f1.Show();
+        }
+
+        private void dgvInventoryCRUD_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

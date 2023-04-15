@@ -67,6 +67,7 @@
             this.dgvStockLimit.Name = "dgvStockLimit";
             this.dgvStockLimit.Size = new System.Drawing.Size(476, 234);
             this.dgvStockLimit.TabIndex = 2;
+            this.dgvStockLimit.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvStockLimit_CellContentClick);
             // 
             // panel2
             // 
@@ -122,6 +123,7 @@
             this.Controls.Add(this.btnSubmit);
             this.Name = "Form9";
             this.Text = "Form9";
+            this.Load += new System.EventHandler(this.Form9_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvStockLimit)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

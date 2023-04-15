@@ -139,5 +139,15 @@ namespace Inventory
             connection.Close();
             CheckBuffer();
         }
+
+        private void Form9_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvStockLimit_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

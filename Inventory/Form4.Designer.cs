@@ -60,6 +60,7 @@
             this.dgvInventoryViewer.Name = "dgvInventoryViewer";
             this.dgvInventoryViewer.Size = new System.Drawing.Size(785, 301);
             this.dgvInventoryViewer.TabIndex = 1;
+            this.dgvInventoryViewer.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInventoryViewer_CellContentClick);
             // 
             // panel1
             // 

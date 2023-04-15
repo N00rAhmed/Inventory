@@ -8,6 +8,6 @@ namespace Inventory
 {
     public class DB
     {
-        public static string DBLocation = @"data source = C:\Users\ethan\Documents\C#\Inventory\Inventory\inventory.db";
+        public static string DBLocation = @"data source = C:\Users\User\Desktop\KoolKaftan\Inventory\inventory.db";
     }
 }
