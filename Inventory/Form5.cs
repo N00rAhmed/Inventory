@@ -138,13 +138,19 @@ namespace Inventory
                 var rowArray = dt.Rows[row].ItemArray;
                 //Console.WriteLine("BarcodeID = {0}, DateTIme = {1}", rowArray.ElementAt(0).ToString(), rowArray.ElementAt(1).ToString());
                 int O;
-                if (itemCount.TryGetValue(Int32.Parse(rowArray.ElementAt(0).ToString()), out O)) // if exists in dictionary
+                try
                 {
-                    itemCount[Int32.Parse(rowArray.ElementAt(0).ToString())] = O+1;
-                }
-                else // if doesn't exist in dictionary
+                    if (itemCount.TryGetValue(Int32.Parse(rowArray.ElementAt(0).ToString()), out O)) // if exists in dictionary
+                    {
+                        itemCount[Int32.Parse(rowArray.ElementAt(0).ToString())] = O + 1;
+                    }
+                    else // if doesn't exist in dictionary
+                    {
+                        itemCount[Int32.Parse(rowArray.ElementAt(0).ToString())] = 1;
+                    }
+                }catch (Exception ex)
                 {
-                    itemCount[Int32.Parse(rowArray.ElementAt(0).ToString())] = 1;
+                    
                 }
             }
             foreach (KeyValuePair<int, int> kvp in itemCount)
