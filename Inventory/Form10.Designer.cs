@@ -37,6 +37,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.Titletxtbox = new System.Windows.Forms.TextBox();
+            this.btnScan = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -59,7 +60,7 @@
             this.txtBarcode.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.txtBarcode.Location = new System.Drawing.Point(235, 408);
             this.txtBarcode.Name = "txtBarcode";
-            this.txtBarcode.Size = new System.Drawing.Size(250, 20);
+            this.txtBarcode.Size = new System.Drawing.Size(270, 20);
             this.txtBarcode.TabIndex = 1;
             // 
             // pictureBox
@@ -136,11 +137,25 @@
             this.Titletxtbox.TabIndex = 10;
             this.Titletxtbox.Text = "Cool";
             // 
+            // btnScan
+            // 
+            this.btnScan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnScan.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.btnScan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnScan.Location = new System.Drawing.Point(540, 398);
+            this.btnScan.Name = "btnScan";
+            this.btnScan.Size = new System.Drawing.Size(104, 30);
+            this.btnScan.TabIndex = 11;
+            this.btnScan.Text = "Scan Barcode";
+            this.btnScan.UseVisualStyleBackColor = true;
+            this.btnScan.Click += new System.EventHandler(this.btnScan_Click);
+            // 
             // Form10
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 503);
+            this.Controls.Add(this.btnScan);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label1);
@@ -172,5 +187,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox Titletxtbox;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnScan;
     }
 }

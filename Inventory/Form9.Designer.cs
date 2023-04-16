@@ -35,6 +35,9 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.Titletxtbox = new System.Windows.Forms.TextBox();
+            this.txtScanLimit = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStockLimit)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -42,7 +45,7 @@
             // btnSubmit
             // 
             this.btnSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubmit.Location = new System.Drawing.Point(387, 324);
+            this.btnSubmit.Location = new System.Drawing.Point(411, 324);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(104, 42);
             this.btnSubmit.TabIndex = 0;
@@ -54,10 +57,11 @@
             // 
             this.txtBufferLimit.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtBufferLimit.Location = new System.Drawing.Point(189, 336);
+            this.txtBufferLimit.Location = new System.Drawing.Point(230, 324);
             this.txtBufferLimit.Name = "txtBufferLimit";
             this.txtBufferLimit.Size = new System.Drawing.Size(175, 20);
             this.txtBufferLimit.TabIndex = 1;
+            this.txtBufferLimit.TextChanged += new System.EventHandler(this.txtBufferLimit_TextChanged);
             // 
             // dgvStockLimit
             // 
@@ -111,11 +115,43 @@
             this.Titletxtbox.TabIndex = 11;
             this.Titletxtbox.Text = "Cool";
             // 
+            // txtScanLimit
+            // 
+            this.txtScanLimit.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtScanLimit.Location = new System.Drawing.Point(230, 346);
+            this.txtScanLimit.Name = "txtScanLimit";
+            this.txtScanLimit.Size = new System.Drawing.Size(175, 20);
+            this.txtScanLimit.TabIndex = 11;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(121, 324);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(83, 18);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "BufferLimit";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(121, 349);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(78, 18);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "ScanLimit";
+            // 
             // Form9
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(772, 450);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtScanLimit);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.dgvStockLimit);
@@ -141,5 +177,8 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox Titletxtbox;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtScanLimit;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
