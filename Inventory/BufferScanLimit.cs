@@ -13,9 +13,9 @@ using System.Windows.Forms;
 
 namespace Inventory
 {
-    public partial class Form9 : Form
+    public partial class BufferScanLimit : Form
     {
-        public Form9()
+        public BufferScanLimit()
         {
             InitializeComponent();
             LoadData();

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Inventory
 {
-    public partial class Form8 : Form
+    public partial class ManagerWelcome : Form
     {
-        public Form8()
+        public ManagerWelcome()
         {
             InitializeComponent();
         }
@@ -20,7 +20,7 @@ namespace Inventory
         private void MLogin_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form6 f6 = new Form6();
+            ManagerLogin f6 = new ManagerLogin();
             f6.Show();
 
         }
@@ -28,7 +28,7 @@ namespace Inventory
         private void MRegister_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form7 f7 = new Form7();
+            ManagerRegister f7 = new ManagerRegister();
             f7.Show();
 
         }

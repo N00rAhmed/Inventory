@@ -14,12 +14,12 @@ using System.Data.Entity.Core.Common.CommandTrees;
 
 namespace Inventory
 {
-    public partial class Form2 : Form
+    public partial class Login : Form
     {
         DataTable dt = new DataTable(); // Store a copy of the database to be easily indexable
         public static string uid = "";
 
-        public Form2()
+        public Login()
         {
             InitializeComponent();
             SQLiteConnection conn = new SQLiteConnection(DB.DBLocation);
@@ -56,7 +56,7 @@ namespace Inventory
                     uid = dr["UserID"].ToString();
                     // Switch to form4
                     this.Hide();
-                    Form4 f4 = new Form4();
+                    InventoryManager f4 = new InventoryManager();
                     f4.Show();
                     return;
                 }

@@ -12,12 +12,12 @@ using System.Windows.Forms;
 
 namespace Inventory
 {
-    public partial class Form6 : Form
+    public partial class ManagerLogin : Form
     {
         DataTable dt = new DataTable();
         public static string uid = "";
 
-        public Form6()
+        public ManagerLogin()
         {
             InitializeComponent();
 
@@ -56,7 +56,7 @@ namespace Inventory
                     uid = dr["UserAdminID"].ToString();
                     // Switch to form5
                     this.Hide();
-                    Form5 f5 = new Form5();
+                    CrudManager f5 = new CrudManager();
                     f5.Show();
                     return;
                 }
