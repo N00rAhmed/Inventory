@@ -16,7 +16,7 @@ namespace Inventory
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CRUD());
+            Application.Run(new CrudManager());
         }
     }
 }
