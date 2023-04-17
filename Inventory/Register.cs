@@ -47,5 +47,12 @@ namespace Inventory
             Usernametxtbox.Text = "";
             Passwordtxtbox.Text = "";
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            WelcomePage welcome = new WelcomePage();
+            welcome.Show();
+        }
     }
 }
