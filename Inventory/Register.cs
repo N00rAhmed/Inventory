@@ -15,9 +15,9 @@ using System.Data.SqlClient;
 
 namespace Inventory
 {
-    public partial class Form3 : Form
+    public partial class Register : Form
     {
-        public Form3()
+        public Register()
         {
             InitializeComponent();
         }
@@ -37,7 +37,7 @@ namespace Inventory
 /*            AmendDatabase(query);
 */
 
-            Form2 f2 = new Form2();
+            Login f2 = new Login();
             f2.Show();
 
 

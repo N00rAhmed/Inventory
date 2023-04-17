@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Inventory
 {
-    public partial class Form2 : Form
+    public partial class Login : Form
     {
-        public Form2()
+        public Login()
         {
             InitializeComponent();
         }
@@ -23,14 +23,14 @@ namespace Inventory
             if (userNametxt.Text == "manager")
             {
                 this.Hide();
-                Form5 f5 = new Form5();
+                InventoryC f5 = new InventoryC();
                 f5.Show();
 
             }
             else
             {
                 this.Hide();
-                Form4 f4 = new Form4();
+                InventoryM f4 = new InventoryM();
                 f4.Show();
 
             }

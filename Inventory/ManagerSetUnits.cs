@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace Inventory
 {
-    public partial class Form6 : Form
+    public partial class ManagerSetUnits : Form
     {
-        public Form6()
+        public ManagerSetUnits()
         {
             InitializeComponent();
         }

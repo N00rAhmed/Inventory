@@ -1,6 +1,6 @@
 ﻿namespace Inventory
 {
-    partial class Form3
+    partial class Register
     {
         /// <summary>
         /// Required designer variable.

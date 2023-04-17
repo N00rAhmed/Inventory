@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Inventory
 {
-    public partial class Form4 : Form
+    public partial class InventoryM : Form
     {
-        public Form4()
+        public InventoryM()
         {
             InitializeComponent();
             LoadData();

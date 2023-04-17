@@ -12,9 +12,9 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Inventory
 {
-    public partial class Form5 : Form
+    public partial class InventoryC : Form
     {
-        public Form5()
+        public InventoryC()
         {
             InitializeComponent();
             LoadData();
