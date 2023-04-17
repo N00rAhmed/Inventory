@@ -39,7 +39,6 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -152,7 +151,6 @@
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(127)))), ((int)(((byte)(24)))));
-            this.panel2.Controls.Add(this.button2);
             this.panel2.Location = new System.Drawing.Point(2, 379);
             this.panel2.MinimumSize = new System.Drawing.Size(797, 74);
             this.panel2.Name = "panel2";
@@ -162,7 +160,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(654, 20);
+            this.button2.Location = new System.Drawing.Point(692, -2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(104, 39);
             this.button2.TabIndex = 0;
@@ -175,6 +173,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.Titletxtbox);
@@ -188,7 +187,6 @@
             this.MinimumSize = new System.Drawing.Size(816, 489);
             this.Name = "Login";
             this.Load += new System.EventHandler(this.Form2_Load);
-            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
