@@ -1,6 +1,6 @@
 ﻿namespace Inventory
 {
-    partial class Form5
+    partial class CrudManager
     {
         /// <summary>
         /// Required designer variable.

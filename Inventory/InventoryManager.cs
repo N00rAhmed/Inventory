@@ -5,22 +5,24 @@ using System.Data;
 using System.Data.SQLite;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 
 namespace Inventory
 {
-    public partial class Form11 : Form
+    public partial class InventoryManager : Form
     {
-        public Form11()
+        public InventoryManager()
         {
             InitializeComponent();
             LoadData();
         }
         private void LoadData()
         {
-            SQLiteConnection conn = new SQLiteConnection(Inventory.DB.DBLocation);
+            SQLiteConnection conn = new SQLiteConnection(DB.DBLocation);
             conn.Open();
 
             string query = "SELECT * FROM Kaftan_Stock";
@@ -28,21 +30,22 @@ namespace Inventory
 
             DataTable dt = new DataTable();
             SQLiteDataAdapter adapter = new SQLiteDataAdapter(cmd);
-            SQLiteCommandBuilder builder = new SQLiteCommandBuilder(adapter);
             adapter.Fill(dt);
 
-            dgvStockData.DataSource = dt;
+            dgvInventoryViewer.DataSource = dt;
+            //dgvTasks.Columns[3].Visible = false;
             conn.Close();
         }
 
-
-
-        private void Form11_Load(object sender, EventArgs e)
+        private void LogoutBTN1_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            WelcomePage f1 = new WelcomePage();
+            f1.Show();
 
         }
 
-        private void dgvStockData_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dgvInventoryViewer_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

@@ -14,11 +14,11 @@ using System.Data.SQLite;
 
 namespace Inventory
 {
-    public partial class Form10 : Form
+    public partial class Barcodescanner : Form
     {
         FilterInfoCollection filterInfoCollection;
         VideoCaptureDevice videoCaptureDevice;
-        public Form10()
+        public Barcodescanner()
         {
             InitializeComponent();
         }
