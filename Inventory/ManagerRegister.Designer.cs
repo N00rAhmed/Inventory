@@ -238,7 +238,7 @@
             this.panel2.Size = new System.Drawing.Size(797, 61);
             this.panel2.TabIndex = 15;
             // 
-            // Form7
+            // ManagerRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -259,8 +259,7 @@
             this.Controls.Add(this.mngLname);
             this.Controls.Add(this.Mngfname);
             this.MinimumSize = new System.Drawing.Size(816, 489);
-            this.Name = "Form7";
-            this.Text = "Form7";
+            this.Name = "ManagerRegister";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

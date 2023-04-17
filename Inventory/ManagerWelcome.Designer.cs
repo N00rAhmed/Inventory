@@ -94,7 +94,7 @@
             this.textBox1.TabIndex = 12;
             this.textBox1.Text = "Kaftan";
             // 
-            // Form8
+            // ManagerWelcome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -106,8 +106,7 @@
             this.Controls.Add(this.MRegister);
             this.Controls.Add(this.MLogin);
             this.MinimumSize = new System.Drawing.Size(816, 496);
-            this.Name = "Form8";
-            this.Text = "Form8";
+            this.Name = "ManagerWelcome";
             this.ResumeLayout(false);
             this.PerformLayout();
 

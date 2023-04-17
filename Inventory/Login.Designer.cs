@@ -156,7 +156,7 @@
             this.panel2.Size = new System.Drawing.Size(797, 74);
             this.panel2.TabIndex = 12;
             // 
-            // Form2
+            // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -172,8 +172,7 @@
             this.Controls.Add(this.loginBtn);
             this.Controls.Add(this.label1);
             this.MinimumSize = new System.Drawing.Size(816, 489);
-            this.Name = "Form2";
-            this.Text = "Form2";
+            this.Name = "Login";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

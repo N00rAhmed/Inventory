@@ -189,7 +189,7 @@
             this.label11.TabIndex = 23;
             this.label11.Text = "Password:";
             // 
-            // Form3
+            // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -209,8 +209,7 @@
             this.Controls.Add(this.createAccountBtn);
             this.Controls.Add(this.label1);
             this.MinimumSize = new System.Drawing.Size(820, 490);
-            this.Name = "Form3";
-            this.Text = "Form3";
+            this.Name = "Register";
             this.ResumeLayout(false);
             this.PerformLayout();
 

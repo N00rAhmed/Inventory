@@ -160,7 +160,7 @@
             this.panel2.Size = new System.Drawing.Size(801, 65);
             this.panel2.TabIndex = 12;
             // 
-            // Form6
+            // ManagerLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -175,8 +175,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Manageremail);
             this.MinimumSize = new System.Drawing.Size(820, 490);
-            this.Name = "Form6";
-            this.Text = "Form6";
+            this.Name = "ManagerLogin";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
