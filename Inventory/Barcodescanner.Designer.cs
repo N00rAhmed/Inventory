@@ -150,7 +150,7 @@
             this.btnScan.UseVisualStyleBackColor = true;
             this.btnScan.Click += new System.EventHandler(this.btnScan_Click);
             // 
-            // Form10
+            // Barcodescanner
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -164,8 +164,7 @@
             this.Controls.Add(this.txtBarcode);
             this.Controls.Add(this.btnActivate);
             this.MinimumSize = new System.Drawing.Size(816, 542);
-            this.Name = "Form10";
-            this.Text = "Form10";
+            this.Name = "Barcodescanner";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form10_FormClosing);
             this.Load += new System.EventHandler(this.Form10_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();

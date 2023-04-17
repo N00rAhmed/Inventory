@@ -115,7 +115,7 @@
             this.LogoutBTN1.UseVisualStyleBackColor = true;
             this.LogoutBTN1.Click += new System.EventHandler(this.LogoutBTN1_Click);
             // 
-            // Form4
+            // InventoryManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -127,8 +127,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dgvInventoryViewer);
             this.MinimumSize = new System.Drawing.Size(816, 489);
-            this.Name = "Form4";
-            this.Text = "Form4";
+            this.Name = "InventoryManager";
             ((System.ComponentModel.ISupportInitialize)(this.dgvInventoryViewer)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

@@ -354,7 +354,7 @@
             this.label10.TabIndex = 26;
             this.label10.Text = "Stock Performance";
             // 
-            // Form5
+            // CrudManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -386,8 +386,7 @@
             this.Controls.Add(this.Category);
             this.Controls.Add(this.dgvInventoryCRUD);
             this.MinimumSize = new System.Drawing.Size(900, 560);
-            this.Name = "Form5";
-            this.Text = "Form5";
+            this.Name = "CrudManager";
             ((System.ComponentModel.ISupportInitialize)(this.dgvInventoryCRUD)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

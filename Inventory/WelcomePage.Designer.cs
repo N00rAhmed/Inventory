@@ -113,7 +113,7 @@
             this.textBox1.TabIndex = 10;
             this.textBox1.Text = "Kaftan";
             // 
-            // Form1
+            // WelcomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -126,8 +126,7 @@
             this.Controls.Add(this.Login);
             this.Controls.Add(this.Create_account);
             this.MinimumSize = new System.Drawing.Size(200, 470);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "WelcomePage";
             this.ResumeLayout(false);
             this.PerformLayout();
 
