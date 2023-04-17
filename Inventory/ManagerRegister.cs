@@ -48,5 +48,12 @@ namespace Inventory
             ManagerLogin f6 = new ManagerLogin();
             f6.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ManagerWelcome Mwelcome = new ManagerWelcome();
+            Mwelcome.Show();
+        }
     }
 }

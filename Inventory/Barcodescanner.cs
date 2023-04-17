@@ -96,5 +96,12 @@ namespace Inventory
                 conn.Close();
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            CrudManager crud = new CrudManager();
+            crud.Show();
+        }
     }
 }

@@ -68,5 +68,12 @@ namespace Inventory
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            WelcomePage welcome = new WelcomePage();
+            welcome.Show();
+        }
     }
 }

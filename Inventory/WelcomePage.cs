@@ -39,5 +39,10 @@ namespace Inventory
             ManagerWelcome f8 = new ManagerWelcome();
             f8.Show();
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
