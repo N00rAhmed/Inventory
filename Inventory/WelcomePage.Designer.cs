@@ -33,10 +33,9 @@
             this.ManagerBtn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.Titletxtbox = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // Create_account
@@ -90,11 +89,21 @@
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(127)))), ((int)(((byte)(24)))));
-            this.panel2.Controls.Add(this.button1);
             this.panel2.Location = new System.Drawing.Point(0, 379);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(801, 74);
             this.panel2.TabIndex = 8;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(691, -1);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(110, 41);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Exit";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // Titletxtbox
             // 
@@ -116,22 +125,12 @@
             this.textBox1.TabIndex = 10;
             this.textBox1.Text = "Kaftan";
             // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(665, 19);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(110, 41);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Exit";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
             // WelcomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(804, 451);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.Titletxtbox);
             this.Controls.Add(this.panel2);
@@ -141,7 +140,6 @@
             this.Controls.Add(this.Create_account);
             this.MinimumSize = new System.Drawing.Size(200, 470);
             this.Name = "WelcomePage";
-            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
