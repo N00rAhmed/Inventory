@@ -20,9 +20,9 @@ database is locked'
 */
 namespace Inventory
 {
-    public partial class Form5 : Form
+    public partial class CrudManager : Form
     {
-        public Form5()
+        public CrudManager()
         {
             InitializeComponent();
             LoadData();
@@ -100,21 +100,21 @@ namespace Inventory
         private void LimitBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form9 f9 = new Form9();
+            BufferScanLimit f9 = new BufferScanLimit();
             f9.Show();
         }
 
         private void ScannerBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form10 f10 = new Form10();
+            Barcodescanner f10 = new Barcodescanner();
             f10.Show();
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form1 f1 = new Form1();
+            WelcomePage f1 = new WelcomePage();
             f1.Show();
         }
 

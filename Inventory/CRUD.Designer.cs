@@ -1,6 +1,6 @@
 ﻿namespace Inventory
 {
-    partial class Form11
+    partial class CRUD
     {
         /// <summary>
         /// Required designer variable.

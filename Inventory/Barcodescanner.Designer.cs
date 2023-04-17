@@ -1,6 +1,6 @@
 ﻿namespace Inventory
 {
-    partial class Form10
+    partial class Barcodescanner
     {
         /// <summary>
         /// Required designer variable.

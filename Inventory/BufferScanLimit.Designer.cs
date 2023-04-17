@@ -1,6 +1,6 @@
 ﻿namespace Inventory
 {
-    partial class Form9
+    partial class BufferScanLimit
     {
         /// <summary>
         /// Required designer variable.

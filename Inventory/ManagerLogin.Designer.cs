@@ -1,6 +1,6 @@
 ﻿namespace Inventory
 {
-    partial class Form6
+    partial class ManagerLogin
     {
         /// <summary>
         /// Required designer variable.
